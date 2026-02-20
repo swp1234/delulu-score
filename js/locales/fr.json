@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "À quel point es-tu Delulu ?",
+    "description": "12 questions pour mesurer ta confiance délirante en amour, carrière et image de soi. Quel est ton score Delulu ?"
+  },
+  "a11y": { "skip": "Aller au contenu" },
+  "app": {
+    "title": "À quel point es-tu Delulu ?",
+    "subtitle": "Mesure ta confiance délirante en amour, carrière et image de soi",
+    "disclaimer": "Ce test est uniquement pour le divertissement, pas une évaluation psychologique professionnelle.",
+    "start": "Commencer le test",
+    "questionInfo": "12 questions · ~2 min"
+  },
+  "questions": {
+    "q1": {
+      "text": "Tu répètes des conversations qui n'auront jamais lieu ?",
+      "options": { "a": "Jamais", "b": "Parfois, sous la douche", "c": "Plusieurs scénarios, avec dialogues", "d": "J'ai un scénario complet" }
+    },
+    "q2": {
+      "text": "Tu as déjà planifié ton avenir avec quelqu'un à qui tu n'as jamais parlé ?",
+      "options": { "a": "C'est inquiétant", "b": "Peut-être imaginé un rendez-vous", "c": "J'ai nommé nos enfants", "d": "J'ai choisi le lieu du mariage" }
+    },
+    "q3": {
+      "text": "Quand quelqu'un est gentil avec toi, ta première pensée ?",
+      "options": { "a": "Ils sont juste polis", "b": "Peut-être qu'ils m'aiment bien ?", "c": "Ils m'aiment, c'est sûr", "d": "On sort pratiquement ensemble" }
+    },
+    "q4": {
+      "text": "Tu crois que tu pourrais devenir célèbre ?",
+      "options": { "a": "Pas vraiment", "b": "Peut-être dans un domaine niche", "c": "Absolument, j'ai juste pas commencé", "d": "Je suis déjà célèbre, les gens ne le savent pas encore" }
+    },
+    "q5": {
+      "text": "Tu imagines souvent ton discours de remerciement ?",
+      "options": { "a": "Pour quoi ?", "b": "Une ou deux fois, pour rire", "c": "Je l'ai mémorisé", "d": "J'ai remercié des personnes spécifiques par nom" }
+    },
+    "q6": {
+      "text": "Quelqu'un a lu ton message sans répondre. Que s'est-il passé ?",
+      "options": { "a": "Ils sont occupés", "b": "Ils réfléchissent à la réponse parfaite", "c": "Intimidés par mon énergie", "d": "Leur téléphone a cassé à cause de la puissance de mon message" }
+    },
+    "q7": {
+      "text": "Comment tu te vois dans 5 ans ?",
+      "options": { "a": "Employé(e) de façon réaliste", "b": "En réussite dans mon domaine", "c": "Vivant ma vie de rêve", "d": "En couverture d'un magazine" }
+    },
+    "q8": {
+      "text": "Un inconnu t'a souri. Ça veut dire quoi ?",
+      "options": { "a": "Rien, ils sourient à tout le monde", "b": "Ils sont amicaux", "c": "Ils ont ressenti mon aura", "d": "C'était le coup de foudre" }
+    },
+    "q9": {
+      "text": "Tu crois à la manifestation ?",
+      "options": { "a": "C'est pas réel", "b": "La pensée positive aide", "c": "Je manifeste tous les jours", "d": "J'ai manifesté l'apparition de ce quiz" }
+    },
+    "q10": {
+      "text": "Comment tu gères le rejet ?",
+      "options": { "a": "J'accepte et je passe à autre chose", "b": "Un peu triste mais ça va", "c": "C'est leur perte, pas la mienne", "d": "Ils reviendront, ils reviennent toujours" }
+    },
+    "q11": {
+      "text": "Tu vois la story Instagram de ton crush. Tu penses :",
+      "options": { "a": "Contenu intéressant", "b": "Je me demande ce qu'il/elle fait", "c": "C'est posté pour moi", "d": "C'est pratiquement une lettre d'amour" }
+    },
+    "q12": {
+      "text": "Quand tu te regardes dans le miroir, tu vois :",
+      "options": { "a": "Une personne normale", "b": "Quelqu'un avec du potentiel", "c": "Un(e) beau/belle gosse certifié(e)", "d": "Le personnage principal de l'univers" }
+    }
+  },
+  "result": {
+    "yourScore": "Ton Score Delulu",
+    "analysis": "Analyse",
+    "retake": "Refaire le test"
+  },
+  "results": {
+    "grounded": {
+      "name": "Les pieds sur terre",
+      "tagline": "La froide réalité. Les thérapeutes t'adorent.",
+      "analysis": "Tu vois le monde tel qu'il est — pas de lunettes roses, pas de bande-son hollywoodienne. Pendant que les autres rêvassent, tu lis la situation correctement. Roi/Reine du réalisme !"
+    },
+    "slightly": {
+      "name": "Légèrement Delulu",
+      "tagline": "Une pincée saine de fantaisie.",
+      "analysis": "Tu as un mélange sain de fantaisie et de réalité. Tu rêves, mais tu mets aussi le réveil. L'équilibre parfait entre espoir et réalisme !"
+    },
+    "solulu": {
+      "name": "Delulu c'est la Solulu",
+      "tagline": "Le point idéal de l'illusion positive.",
+      "analysis": "Tu as cracké le code ! Tes illusions positives alimentent vraiment ta confiance. La science dit qu'un peu de biais d'auto-amélioration est sain — tu en es la preuve vivante !"
+    },
+    "daydreamer": {
+      "name": "Rêveur(se) professionnel(le)",
+      "tagline": "Vit dans une comédie romantique.",
+      "analysis": "Ton imagination gère tout un studio de production. Chaque crush est une rom-com, chaque entretien est ta story d'origine. Tu ne fais pas que rêver — tu réalises, produis et joues le rôle principal du film de ta vie."
+    },
+    "movie": {
+      "name": "Vit dans un film",
+      "tagline": "Réalisé par ton imagination.",
+      "analysis": "La réalité ? Jamais entendu parler. Tu existes dans un univers où chaque inconnu tombe amoureux de toi, chaque échec est un retournement de situation. Ton niveau Delulu a dépassé la compréhension humaine. Iconique."
+    }
+  },
+  "share": {
+    "twitter": "Partager sur X",
+    "copyUrl": "Copier le lien",
+    "copied": "Lien copié !",
+    "text": "Mon Score Delulu : {score}% - {tier} ! À quel point es-tu delulu ?"
+  }
+}

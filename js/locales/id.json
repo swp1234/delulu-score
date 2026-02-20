@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Seberapa Delulu Kamu?",
+    "description": "12 pertanyaan untuk mengukur kepercayaan diri delusionalmu dalam romansa, karier, dan citra diri. Berapa skor Delulumu?"
+  },
+  "a11y": { "skip": "Lewati ke konten" },
+  "app": {
+    "title": "Seberapa Delulu Kamu?",
+    "subtitle": "Ukur kepercayaan diri delusionalmu dalam romansa, karier, dan citra diri",
+    "disclaimer": "Tes ini hanya untuk hiburan, bukan penilaian psikologis profesional.",
+    "start": "Mulai Tes",
+    "questionInfo": "12 pertanyaan · ~2 menit"
+  },
+  "questions": {
+    "q1": {
+      "text": "Apakah kamu berlatih percakapan yang tidak akan pernah terjadi?",
+      "options": { "a": "Tidak pernah", "b": "Kadang, saat mandi", "c": "Beberapa skenario dengan dialog", "d": "Aku punya naskah lengkap" }
+    },
+    "q2": {
+      "text": "Pernah merencanakan masa depan dengan seseorang yang belum pernah kamu ajak bicara?",
+      "options": { "a": "Itu mengkhawatirkan", "b": "Mungkin membayangkan satu kencan", "c": "Sudah beri nama anak-anak", "d": "Sudah pilih tempat pernikahan" }
+    },
+    "q3": {
+      "text": "Ketika seseorang baik padamu, pikiran pertamamu?",
+      "options": { "a": "Mereka cuma sopan", "b": "Mungkin mereka suka aku?", "c": "Mereka pasti suka aku", "d": "Kita udah kayak pacaran" }
+    },
+    "q4": {
+      "text": "Kamu percaya bisa jadi terkenal?",
+      "options": { "a": "Tidak juga", "b": "Mungkin di bidang niche", "c": "Tentu saja, cuma belum mulai", "d": "Aku sudah terkenal, orang-orang belum tahu aja" }
+    },
+    "q5": {
+      "text": "Seberapa sering kamu membayangkan pidato penerimaanmu?",
+      "options": { "a": "Untuk apa?", "b": "Satu-dua kali, iseng", "c": "Sudah hafal", "d": "Sudah berterima kasih ke orang tertentu" }
+    },
+    "q6": {
+      "text": "Seseorang membaca pesanmu tapi tidak membalas. Apa yang terjadi?",
+      "options": { "a": "Mereka sibuk", "b": "Mungkin memikirkan balasan sempurna", "c": "Terintimidasi oleh energiku", "d": "HP mereka rusak karena kekuatan pesanku" }
+    },
+    "q7": {
+      "text": "Bagaimana kamu melihat dirimu 5 tahun lagi?",
+      "options": { "a": "Realistis bekerja", "b": "Sukses di bidangku", "c": "Menjalani hidup impian", "d": "Di sampul majalah" }
+    },
+    "q8": {
+      "text": "Orang asing tersenyum padamu. Artinya?",
+      "options": { "a": "Tidak ada, mereka senyum ke semua orang", "b": "Mereka ramah saja", "c": "Mereka merasakan auraku", "d": "Cinta pada pandangan pertama" }
+    },
+    "q9": {
+      "text": "Kamu percaya manifestasi?",
+      "options": { "a": "Itu tidak nyata", "b": "Berpikir positif membantu", "c": "Aku manifestasi setiap hari", "d": "Kuis ini muncul juga karena aku manifestasikan" }
+    },
+    "q10": {
+      "text": "Bagaimana kamu menangani penolakan?",
+      "options": { "a": "Terima dan lanjut", "b": "Sedikit sedih tapi ok", "c": "Rugi mereka, bukan aku", "d": "Mereka akan kembali, selalu begitu" }
+    },
+    "q11": {
+      "text": "Kamu melihat story Instagram gebetanmu. Kamu berpikir:",
+      "options": { "a": "Konten menarik", "b": "Lagi ngapain ya", "c": "Mereka posting itu buat aku", "d": "Ini pada dasarnya surat cinta" }
+    },
+    "q12": {
+      "text": "Saat bercermin, kamu melihat:",
+      "options": { "a": "Orang biasa", "b": "Seseorang yang punya potensi", "c": "Paket lengkap yang sudah diakui", "d": "Karakter utama alam semesta" }
+    }
+  },
+  "result": {
+    "yourScore": "Skor Delulumu",
+    "analysis": "Analisis",
+    "retake": "Tes Lagi"
+  },
+  "results": {
+    "grounded": {
+      "name": "Realistis",
+      "tagline": "Realita dingin. Terapis menyukaimu.",
+      "analysis": "Kamu melihat dunia apa adanya — tanpa kacamata merah muda, tanpa soundtrack Hollywood. Saat yang lain bermimpi, kamu membaca situasi dengan tepat. Raja/Ratu realisme!"
+    },
+    "slightly": {
+      "name": "Sedikit Delulu",
+      "tagline": "Sedikit fantasi yang sehat.",
+      "analysis": "Kamu punya campuran sehat antara fantasi dan realita. Bermimpi tapi juga pasang alarm. Keseimbangan sempurna antara harapan dan realisme!"
+    },
+    "solulu": {
+      "name": "Delulu adalah Solulu",
+      "tagline": "Titik manis delusi positif.",
+      "analysis": "Kamu memecahkan kodenya! Delusi positifmu benar-benar memupuk kepercayaan diri. Sains bilang sedikit bias peningkatan diri itu sehat — kamu bukti hidupnya!"
+    },
+    "daydreamer": {
+      "name": "Pemimpi Profesional",
+      "tagline": "Hidup di dalam rom-com.",
+      "analysis": "Imajinasimu menjalankan studio produksi. Setiap gebetan adalah rom-com, setiap wawancara adalah origin story. Kamu tidak hanya bermimpi — kamu menyutradarai, memproduksi, dan membintangi film hidupmu."
+    },
+    "movie": {
+      "name": "Hidup di Film",
+      "tagline": "Disutradarai oleh imajinasimu.",
+      "analysis": "Realita? Tidak pernah dengar. Kamu ada di alam semesta di mana setiap orang asing jatuh cinta padamu, setiap kegagalan adalah plot twist. Level Delulumu telah melampaui pemahaman manusia. Ikonik."
+    }
+  },
+  "share": {
+    "twitter": "Bagikan di X",
+    "copyUrl": "Salin Link",
+    "copied": "Link disalin!",
+    "text": "Skor Deluluku: {score}% - {tier}! Seberapa delulu kamu?"
+  }
+}

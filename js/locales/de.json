@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Wie Delulu bist du?",
+    "description": "12 Fragen, um dein wahnhaftes Selbstvertrauen in Liebe, Karriere und Selbstbild zu messen. Wie hoch ist dein Delulu-Score?"
+  },
+  "a11y": { "skip": "Zum Inhalt springen" },
+  "app": {
+    "title": "Wie Delulu bist du?",
+    "subtitle": "Miss dein wahnhaftes Selbstvertrauen in Liebe, Karriere und Selbstbild",
+    "disclaimer": "Dieser Test ist nur zum Spaß und keine professionelle psychologische Bewertung.",
+    "start": "Test starten",
+    "questionInfo": "12 Fragen · ~2 Min."
+  },
+  "questions": {
+    "q1": {
+      "text": "Probst du Gespräche, die nie stattfinden werden?",
+      "options": { "a": "Nie", "b": "Gelegentlich, unter der Dusche", "c": "Mehrere Szenarien mit Dialogen", "d": "Ich habe ein komplettes Drehbuch" }
+    },
+    "q2": {
+      "text": "Hast du deine Zukunft mit jemandem geplant, mit dem du nie gesprochen hast?",
+      "options": { "a": "Das ist besorgniserregend", "b": "Vielleicht ein Date vorgestellt", "c": "Kindernamen ausgesucht", "d": "Hochzeitslocation ausgewählt" }
+    },
+    "q3": {
+      "text": "Wenn jemand nett zu dir ist, was denkst du zuerst?",
+      "options": { "a": "Die sind einfach höflich", "b": "Vielleicht mögen sie mich?", "c": "Die mögen mich definitiv", "d": "Wir sind praktisch zusammen" }
+    },
+    "q4": {
+      "text": "Glaubst du, du könntest berühmt werden?",
+      "options": { "a": "Nicht wirklich", "b": "Vielleicht in einer Nische", "c": "Auf jeden Fall, hab nur noch nicht angefangen", "d": "Ich bin schon berühmt, die Leute wissen es nur nicht" }
+    },
+    "q5": {
+      "text": "Wie oft stellst du dir deine Dankesrede vor?",
+      "options": { "a": "Wofür?", "b": "Ein-, zweimal zum Spaß", "c": "Ich habe sie auswendig gelernt", "d": "Ich habe bestimmte Leute namentlich gedankt" }
+    },
+    "q6": {
+      "text": "Jemand hat deine Nachricht gelesen, aber nicht geantwortet. Was ist passiert?",
+      "options": { "a": "Die sind beschäftigt", "b": "Die denken über die perfekte Antwort nach", "c": "Eingeschüchtert von meiner Energie", "d": "Ihr Handy ist von der Kraft meiner Nachricht kaputt gegangen" }
+    },
+    "q7": {
+      "text": "Wie siehst du dich in 5 Jahren?",
+      "options": { "a": "Realistisch angestellt", "b": "Erfolgreich in meinem Bereich", "c": "Lebe mein Traumleben", "d": "Auf dem Cover einer Zeitschrift" }
+    },
+    "q8": {
+      "text": "Ein Fremder hat dich angelächelt. Was bedeutet das?",
+      "options": { "a": "Nichts, die lächeln jeden an", "b": "Die sind freundlich", "c": "Die haben meine Ausstrahlung gespürt", "d": "Es war Liebe auf den ersten Blick" }
+    },
+    "q9": {
+      "text": "Glaubst du ans Manifestieren?",
+      "options": { "a": "Das ist nicht real", "b": "Positives Denken hilft", "c": "Ich manifestiere täglich", "d": "Ich habe manifestiert, dass dieses Quiz erscheint" }
+    },
+    "q10": {
+      "text": "Wie gehst du mit Ablehnung um?",
+      "options": { "a": "Akzeptieren und weitermachen", "b": "Ein bisschen traurig, aber okay", "c": "Deren Verlust, nicht meiner", "d": "Die kommen zurück, sie kommen immer zurück" }
+    },
+    "q11": {
+      "text": "Du siehst die Instagram-Story deines Schwarms. Du denkst:",
+      "options": { "a": "Interessanter Content", "b": "Was die wohl machen", "c": "Das haben sie für mich gepostet", "d": "Das ist quasi ein Liebesbrief" }
+    },
+    "q12": {
+      "text": "Wenn du in den Spiegel schaust, siehst du:",
+      "options": { "a": "Einen normalen Menschen", "b": "Jemanden mit Potenzial", "c": "Ein zertifizierter Fang", "d": "Die Hauptfigur des Universums" }
+    }
+  },
+  "result": {
+    "yourScore": "Dein Delulu-Score",
+    "analysis": "Analyse",
+    "retake": "Nochmal testen"
+  },
+  "results": {
+    "grounded": {
+      "name": "Geerdet",
+      "tagline": "Kalte, harte Realität. Therapeuten lieben dich.",
+      "analysis": "Du siehst die Welt, wie sie ist — keine rosarote Brille, kein Hollywood-Soundtrack. Während andere tagträumen, liest du die Situation korrekt. König/Königin des Realismus!"
+    },
+    "slightly": {
+      "name": "Leicht Delulu",
+      "tagline": "Eine gesunde Prise Fantasie.",
+      "analysis": "Du hast eine gesunde Mischung aus Fantasie und Realität. Du träumst, aber stellst auch den Wecker. Die perfekte Balance zwischen Hoffnung und Realismus!"
+    },
+    "solulu": {
+      "name": "Delulu ist die Solulu",
+      "tagline": "Der Sweet Spot positiver Illusionen.",
+      "analysis": "Du hast den Code geknackt! Deine positiven Illusionen stärken tatsächlich dein Selbstvertrauen. Die Wissenschaft sagt, ein bisschen Selbstüberschätzung ist gesund — du bist der lebende Beweis!"
+    },
+    "daydreamer": {
+      "name": "Professioneller Tagträumer",
+      "tagline": "Lebt in einer romantischen Komödie.",
+      "analysis": "Deine Fantasie betreibt ein ganzes Produktionsstudio. Jeder Schwarm ist eine Rom-Com, jedes Bewerbungsgespräch deine Origin-Story. Du träumst nicht nur — du führst Regie, produzierst und spielst die Hauptrolle im Film deines Lebens."
+    },
+    "movie": {
+      "name": "Lebt in einem Film",
+      "tagline": "Regie: deine Vorstellungskraft.",
+      "analysis": "Realität? Nie gehört. Du existierst in einem Universum, in dem sich jeder Fremde in dich verliebt, jeder Rückschlag ein Plot-Twist ist. Dein Delulu-Level hat das menschliche Verständnis überschritten. Ikonisch."
+    }
+  },
+  "share": {
+    "twitter": "Auf X teilen",
+    "copyUrl": "Link kopieren",
+    "copied": "Link kopiert!",
+    "text": "Mein Delulu-Score: {score}% - {tier}! Wie delulu bist du?"
+  }
+}

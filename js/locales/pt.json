@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Quão Delulu Você É?",
+    "description": "12 perguntas para medir sua confiança delirante no amor, carreira e autoimagem. Qual é sua pontuação Delulu?"
+  },
+  "a11y": { "skip": "Pular para o conteúdo" },
+  "app": {
+    "title": "Quão Delulu Você É?",
+    "subtitle": "Meça sua confiança delirante no amor, carreira e autoimagem",
+    "disclaimer": "Este teste é apenas para diversão, não é uma avaliação psicológica profissional.",
+    "start": "Iniciar Teste",
+    "questionInfo": "12 perguntas · ~2 min"
+  },
+  "questions": {
+    "q1": {
+      "text": "Você ensaia conversas que nunca vão acontecer?",
+      "options": { "a": "Nunca", "b": "Às vezes, no banho", "c": "Vários cenários, com diálogos", "d": "Tenho um roteiro completo" }
+    },
+    "q2": {
+      "text": "Já planejou seu futuro com alguém com quem nunca falou?",
+      "options": { "a": "Isso é preocupante", "b": "Talvez imaginei um encontro", "c": "Dei nome aos filhos", "d": "Escolhi o local do casamento" }
+    },
+    "q3": {
+      "text": "Quando alguém é gentil com você, qual é seu primeiro pensamento?",
+      "options": { "a": "Estão sendo educados", "b": "Será que gostam de mim?", "c": "Com certeza gostam de mim", "d": "Já estamos praticamente namorando" }
+    },
+    "q4": {
+      "text": "Você acredita que poderia ficar famoso(a)?",
+      "options": { "a": "Não muito", "b": "Talvez em um nicho", "c": "Com certeza, só não comecei", "d": "Já sou famoso(a), as pessoas não sabem ainda" }
+    },
+    "q5": {
+      "text": "Com que frequência você imagina seu discurso de premiação?",
+      "options": { "a": "Para quê?", "b": "Uma ou duas vezes, por diversão", "c": "Já decorei", "d": "Agradeci pessoas específicas pelo nome" }
+    },
+    "q6": {
+      "text": "Alguém visualizou sua mensagem e não respondeu. O que aconteceu?",
+      "options": { "a": "Estão ocupados", "b": "Podem estar pensando na resposta perfeita", "c": "Ficaram intimidados pela minha energia", "d": "O celular quebrou com o poder da minha mensagem" }
+    },
+    "q7": {
+      "text": "Como você se vê daqui a 5 anos?",
+      "options": { "a": "Realisticamente empregado(a)", "b": "Bem-sucedido(a) na minha área", "c": "Vivendo minha vida dos sonhos", "d": "Na capa de uma revista" }
+    },
+    "q8": {
+      "text": "Um estranho sorriu para você. O que significa?",
+      "options": { "a": "Nada, sorriem para todos", "b": "Estão sendo simpáticos", "c": "Sentiram minha vibe", "d": "Foi amor à primeira vista" }
+    },
+    "q9": {
+      "text": "Você acredita em manifestação?",
+      "options": { "a": "Não é real", "b": "Pensamento positivo ajuda", "c": "Eu manifesto diariamente", "d": "Eu manifestei este quiz aparecendo" }
+    },
+    "q10": {
+      "text": "Como você lida com rejeição?",
+      "options": { "a": "Aceito e sigo em frente", "b": "Um pouco triste, mas ok", "c": "A perda é deles, não minha", "d": "Vão voltar, sempre voltam" }
+    },
+    "q11": {
+      "text": "Você vê o story do seu crush no Instagram. Você pensa:",
+      "options": { "a": "Conteúdo interessante", "b": "O que será que estão fazendo", "c": "Postaram isso para mim", "d": "Isso é basicamente uma carta de amor" }
+    },
+    "q12": {
+      "text": "Quando se olha no espelho, você vê:",
+      "options": { "a": "Uma pessoa comum", "b": "Alguém com potencial", "c": "Um(a) gato(a) certificado(a)", "d": "O personagem principal do universo" }
+    }
+  },
+  "result": {
+    "yourScore": "Sua Pontuação Delulu",
+    "analysis": "Análise",
+    "retake": "Refazer Teste"
+  },
+  "results": {
+    "grounded": {
+      "name": "Pé no Chão",
+      "tagline": "Realidade fria e dura. Terapeutas te adoram.",
+      "analysis": "Você vê o mundo como ele é — sem óculos rosa, sem trilhas sonoras de Hollywood. Enquanto outros sonham acordados, você lê a situação corretamente. Rei/Rainha do realismo!"
+    },
+    "slightly": {
+      "name": "Levemente Delulu",
+      "tagline": "Uma pitada saudável de fantasia.",
+      "analysis": "Você tem uma mistura saudável de fantasia e realidade. Sonha, mas também coloca despertador. O equilíbrio perfeito entre esperança e realismo!"
+    },
+    "solulu": {
+      "name": "Delulu é o Solulu",
+      "tagline": "O ponto doce da ilusão positiva.",
+      "analysis": "Você decifrou o código! Suas ilusões positivas realmente alimentam sua confiança. A ciência diz que um pouco de viés de autoaprimoramento é saudável — você é a prova viva!"
+    },
+    "daydreamer": {
+      "name": "Sonhador(a) Profissional",
+      "tagline": "Vivendo em uma comédia romântica.",
+      "analysis": "Sua imaginação gerencia um estúdio inteiro de produção. Cada crush é uma comédia romântica, cada entrevista é sua história de origem. Você não apenas sonha — dirige, produz e estrela o filme da sua vida."
+    },
+    "movie": {
+      "name": "Vivendo em um Filme",
+      "tagline": "Dirigido pela sua imaginação.",
+      "analysis": "Realidade? Nunca ouvi falar. Você existe em um universo onde todo estranho se apaixona por você, todo revés é uma reviravolta no roteiro. Seu nível Delulu transcendeu o entendimento humano. Icônico."
+    }
+  },
+  "share": {
+    "twitter": "Compartilhar no X",
+    "copyUrl": "Copiar Link",
+    "copied": "Link copiado!",
+    "text": "Minha Pontuação Delulu: {score}% - {tier}! Quão delulu você é?"
+  }
+}
