@@ -1,0 +1,17 @@
+{
+    "name": "Delulu Score - How Delusional Are You?",
+    "short_name": "Delulu Score",
+    "description": "Find out your delulu level with this fun personality quiz",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0a0a14",
+    "theme_color": "#FF6B9D",
+    "orientation": "portrait",
+    "lang": "ko",
+    "dir": "ltr",
+    "icons": [
+        { "src": "icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any" },
+        { "src": "icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any" }
+    ],
+    "categories": ["entertainment", "lifestyle"]
+}

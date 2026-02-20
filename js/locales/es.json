@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "¿Qué tan Delulu eres?",
+    "description": "12 preguntas para medir tu confianza delirante en el amor, la carrera y la autoimagen. ¿Cuál es tu Delulu Score?"
+  },
+  "a11y": {
+    "skip": "Saltar al contenido"
+  },
+  "app": {
+    "title": "¿Qué tan Delulu eres?",
+    "subtitle": "Mide tu confianza delirante en el amor, la carrera y la autoimagen",
+    "disclaimer": "Este test es solo por diversión y no es una evaluación psicológica profesional.",
+    "start": "Iniciar Test",
+    "questionInfo": "12 preguntas · ~2 min"
+  },
+  "questions": {
+    "q1": {
+      "text": "¿Ensayas conversaciones que nunca van a pasar?",
+      "options": {
+        "a": "Nunca",
+        "b": "A veces, en la ducha",
+        "c": "Múltiples escenarios con diálogos",
+        "d": "Tengo un guion completo"
+      }
+    },
+    "q2": {
+      "text": "¿Has planeado tu futuro con alguien con quien nunca has hablado?",
+      "options": {
+        "a": "Eso es preocupante",
+        "b": "Quizás imaginé una cita",
+        "c": "Ya nombré a nuestros hijos",
+        "d": "Ya elegí el lugar de la boda"
+      }
+    },
+    "q3": {
+      "text": "Cuando alguien es amable contigo, tu primer pensamiento es:",
+      "options": {
+        "a": "Solo es educado",
+        "b": "¿Será que le gusto?",
+        "c": "Definitivamente le gusto",
+        "d": "Básicamente ya estamos saliendo"
+      }
+    },
+    "q4": {
+      "text": "¿Crees que podrías ser famoso si realmente lo intentaras?",
+      "options": {
+        "a": "No realmente",
+        "b": "Quizás en un nicho",
+        "c": "Por supuesto, solo no he empezado",
+        "d": "Ya soy famoso, la gente no lo sabe aún"
+      }
+    },
+    "q5": {
+      "text": "¿Con qué frecuencia imaginas tu discurso de aceptación?",
+      "options": {
+        "a": "¿De qué premio?",
+        "b": "Una o dos veces, por diversión",
+        "c": "Lo tengo memorizado",
+        "d": "He agradecido a personas específicas por nombre"
+      }
+    },
+    "q6": {
+      "text": "Alguien te dejó en visto. ¿Qué pasó?",
+      "options": {
+        "a": "Están ocupados",
+        "b": "Están pensando en la respuesta perfecta",
+        "c": "Mi energía los intimidó",
+        "d": "Mi mensaje fue tan poderoso que les rompió el teléfono"
+      }
+    },
+    "q7": {
+      "text": "¿Cómo te ves en 5 años?",
+      "options": {
+        "a": "Trabajando de forma realista",
+        "b": "Exitoso en mi campo",
+        "c": "Viviendo mi vida soñada",
+        "d": "En la portada de una revista"
+      }
+    },
+    "q8": {
+      "text": "Un desconocido te sonrió. ¿Qué significa?",
+      "options": {
+        "a": "Nada, le sonríe a todos",
+        "b": "Solo es amigable",
+        "c": "Notó mi vibra",
+        "d": "Fue amor a primera vista"
+      }
+    },
+    "q9": {
+      "text": "¿Crees en manifestar?",
+      "options": {
+        "a": "No es real",
+        "b": "El pensamiento positivo ayuda",
+        "c": "Manifiesto a diario",
+        "d": "Manifesté que apareciera este quiz"
+      }
+    },
+    "q10": {
+      "text": "¿Cómo manejas el rechazo?",
+      "options": {
+        "a": "Lo acepto y sigo adelante",
+        "b": "Un poco triste pero bien",
+        "c": "Es su pérdida, no la mía",
+        "d": "Van a volver, siempre lo hacen"
+      }
+    },
+    "q11": {
+      "text": "Ves la historia de Instagram de tu crush. Piensas:",
+      "options": {
+        "a": "Contenido interesante",
+        "b": "Me pregunto qué estará haciendo",
+        "c": "Lo publicó para mí",
+        "d": "Esto es básicamente una carta de amor"
+      }
+    },
+    "q12": {
+      "text": "Cuando te miras al espejo, ves:",
+      "options": {
+        "a": "Una persona normal",
+        "b": "Alguien con potencial",
+        "c": "Un partido certificado",
+        "d": "El protagonista del universo"
+      }
+    }
+  },
+  "result": {
+    "yourScore": "Tu Delulu Score",
+    "analysis": "Análisis",
+    "retake": "Repetir Test"
+  },
+  "results": {
+    "grounded": {
+      "name": "Con los pies en la tierra",
+      "tagline": "La fría realidad. Los terapeutas te aman.",
+      "analysis": "Ves el mundo tal como es — sin lentes color rosa, sin bandas sonoras de Hollywood. Mientras otros fantasean con su crush, tú estás leyendo la situación correctamente. ¡Tu terapeuta estaría orgulloso. Rey/reina del realismo!"
+    },
+    "slightly": {
+      "name": "Un poco Delulu",
+      "tagline": "Una pizca saludable de fantasía.",
+      "analysis": "Tienes una mezcla saludable de fantasía y realidad. Sueñas, pero también pones alarmas. Tal vez ensayes una conversación, pero sabes que no va a pasar. ¡El equilibrio perfecto entre esperanza y realismo!"
+    },
+    "solulu": {
+      "name": "Delulu es el Solulu",
+      "tagline": "El punto dulce de la ilusión positiva.",
+      "analysis": "¡Descifraste el código! Tus ilusiones positivas alimentan tu confianza. Crees en ti mismo lo justo para hacer que las cosas pasen. La ciencia dice que un poco de sesgo de automejora es saludable — ¡tú eres la prueba viviente!"
+    },
+    "daydreamer": {
+      "name": "Soñador Profesional",
+      "tagline": "Viviendo en una comedia romántica.",
+      "analysis": "Tu imaginación dirige un estudio de producción. Cada crush es una rom-com, cada entrevista es tu historia de origen, y cada espejo es una sesión de fotos. No solo sueñas — diriges, produces y protagonizas la película de tu vida."
+    },
+    "movie": {
+      "name": "Viviendo en una Película",
+      "tagline": "Dirigida por tu imaginación.",
+      "analysis": "¿Realidad? Nunca escuché de eso. Existes en un universo donde cada desconocido se enamora de ti, cada fracaso es un giro argumental, y siempre estás a un montaje de distancia del éxito. Tu nivel delulu ha trascendido el entendimiento humano. Icónico."
+    }
+  },
+  "share": {
+    "twitter": "Compartir en X",
+    "copyUrl": "Copiar enlace",
+    "copied": "¡Enlace copiado!",
+    "text": "Mi Delulu Score: {score}% - ¡{tier}! ¿Qué tan delulu eres?"
+  }
+}

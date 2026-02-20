@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "How Delulu Are You?",
+    "description": "12 questions to measure your delusional confidence in romance, career, and self-image. What's your Delulu Score?"
+  },
+  "a11y": {
+    "skip": "Skip to content"
+  },
+  "app": {
+    "title": "How Delulu Are You?",
+    "subtitle": "Measure your delusional confidence in romance, career, and self-image",
+    "disclaimer": "This test is for fun only and is not a professional psychological assessment.",
+    "start": "Start Test",
+    "questionInfo": "12 questions · ~2 min"
+  },
+  "questions": {
+    "q1": {
+      "text": "Do you rehearse conversations that will never happen?",
+      "options": {
+        "a": "Never",
+        "b": "Occasionally, in the shower",
+        "c": "Multiple scenarios, with dialogue",
+        "d": "I have a full screenplay"
+      }
+    },
+    "q2": {
+      "text": "Have you planned your future with someone you've never spoken to?",
+      "options": {
+        "a": "That's concerning",
+        "b": "Maybe imagined one date",
+        "c": "Named our kids",
+        "d": "Picked out the wedding venue"
+      }
+    },
+    "q3": {
+      "text": "When someone is nice to you, what's your first thought?",
+      "options": {
+        "a": "They're just being polite",
+        "b": "Maybe they like me?",
+        "c": "They definitely like me",
+        "d": "We're basically dating now"
+      }
+    },
+    "q4": {
+      "text": "Do you believe you could become famous if you really tried?",
+      "options": {
+        "a": "Not really",
+        "b": "Maybe in a niche field",
+        "c": "Absolutely, just haven't started",
+        "d": "I'm already famous, people just don't know yet"
+      }
+    },
+    "q5": {
+      "text": "How often do you imagine your acceptance speech?",
+      "options": {
+        "a": "For what?",
+        "b": "Once or twice, just for fun",
+        "c": "I have it memorized",
+        "d": "I've thanked specific people by name"
+      }
+    },
+    "q6": {
+      "text": "Someone leaves you on read. What happened?",
+      "options": {
+        "a": "They're busy",
+        "b": "They might be thinking of the perfect reply",
+        "c": "They're intimidated by my energy",
+        "d": "Their phone broke from the power of my message"
+      }
+    },
+    "q7": {
+      "text": "How do you see yourself in 5 years?",
+      "options": {
+        "a": "Realistically employed",
+        "b": "Successful in my field",
+        "c": "Living my dream life",
+        "d": "On the cover of a magazine"
+      }
+    },
+    "q8": {
+      "text": "A stranger smiled at you. What does it mean?",
+      "options": {
+        "a": "Nothing, they smile at everyone",
+        "b": "They're being friendly",
+        "c": "They noticed my vibe",
+        "d": "It was love at first sight"
+      }
+    },
+    "q9": {
+      "text": "Do you believe in manifesting?",
+      "options": {
+        "a": "It's not real",
+        "b": "Positive thinking helps",
+        "c": "I manifest daily",
+        "d": "I manifested this quiz appearing"
+      }
+    },
+    "q10": {
+      "text": "How do you handle rejection?",
+      "options": {
+        "a": "Accept it and move on",
+        "b": "A little sad but okay",
+        "c": "Their loss, not mine",
+        "d": "They'll come back, they always do"
+      }
+    },
+    "q11": {
+      "text": "You see your crush's Instagram story. You think:",
+      "options": {
+        "a": "Interesting content",
+        "b": "I wonder what they're up to",
+        "c": "They posted that for me",
+        "d": "This is basically a love letter"
+      }
+    },
+    "q12": {
+      "text": "When you look in the mirror, you see:",
+      "options": {
+        "a": "A regular person",
+        "b": "Someone with potential",
+        "c": "A certified catch",
+        "d": "The main character of the universe"
+      }
+    }
+  },
+  "result": {
+    "yourScore": "Your Delulu Score",
+    "analysis": "Analysis",
+    "retake": "Take Again"
+  },
+  "results": {
+    "grounded": {
+      "name": "Grounded",
+      "tagline": "Cold hard reality. Therapists love you.",
+      "analysis": "You see the world as it is — no rose-tinted glasses, no Hollywood soundtracks. While others are daydreaming about their crushes, you're reading the room correctly. Your therapist would be proud. Realistic king/queen!"
+    },
+    "slightly": {
+      "name": "Slightly Delulu",
+      "tagline": "A healthy dash of fantasy.",
+      "analysis": "You've got a healthy mix of fantasy and reality. You dream, but you also set alarms. You might rehearse one conversation, but you know it won't actually happen. The perfect balance of hope and realism!"
+    },
+    "solulu": {
+      "name": "Delulu is the Solulu",
+      "tagline": "The sweet spot of positive delusion.",
+      "analysis": "You've cracked the code! Your positive delusions actually fuel your confidence. You believe in yourself just enough to make things happen. Science says a little self-enhancement bias is actually healthy — you're living proof!"
+    },
+    "daydreamer": {
+      "name": "Professional Daydreamer",
+      "tagline": "Living in a rom-com.",
+      "analysis": "Your imagination runs a whole production studio. Every crush is a rom-com, every job interview is your origin story, and every mirror is a photoshoot. You don't just dream — you direct, produce, and star in the movie of your life."
+    },
+    "movie": {
+      "name": "Living in a Movie",
+      "tagline": "Directed by your imagination.",
+      "analysis": "Reality? Never heard of it. You exist in a universe where every stranger is falling for you, every setback is a plot twist, and you're always one montage away from success. Your delulu levels have transcended human understanding. Iconic."
+    }
+  },
+  "share": {
+    "twitter": "Share on X",
+    "copyUrl": "Copy Link",
+    "copied": "Link copied!",
+    "text": "My Delulu Score: {score}% - {tier}! How delulu are you?"
+  }
+}
