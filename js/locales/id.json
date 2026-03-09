@@ -1,102 +1,113 @@
 {
   "meta": {
-    "title": "Seberapa Delulu Kamu?",
-    "description": "12 pertanyaan untuk mengukur kepercayaan diri delusionalmu dalam romansa, karier, dan citra diri. Berapa skor Delulumu?"
+    "title": "Filter Distorsi Realitas - Skor Delulu",
+    "description": "10 situasi sehari-hari mengungkap level distorsi realitasmu. Interpretasi realistis vs delulu — bagaimana lensamu?"
   },
-  "a11y": { "skip": "Lewati ke konten" },
+  "a11y": {
+    "skip": "Langsung ke konten"
+  },
   "app": {
-    "title": "Seberapa Delulu Kamu?",
-    "subtitle": "Ukur kepercayaan diri delusionalmu dalam romansa, karier, dan citra diri",
+    "title": "Filter Distorsi Realitas",
+    "subtitle": "Seberapa terdistorsi lensa realitasmu?",
     "disclaimer": "Tes ini hanya untuk hiburan, bukan penilaian psikologis profesional.",
-    "start": "Mulai Tes",
-    "questionInfo": "12 pertanyaan · ~2 menit"
+    "start": "Aktifkan Filter",
+    "questionInfo": "10 situasi · ~2 menit"
   },
-  "questions": {
-    "q1": {
-      "text": "Apakah kamu berlatih percakapan yang tidak akan pernah terjadi?",
-      "options": { "a": "Tidak pernah", "b": "Kadang, saat mandi", "c": "Beberapa skenario dengan dialog", "d": "Aku punya naskah lengkap" }
+  "filter": {
+    "realistic": "Realistis",
+    "delulu": "Delulu",
+    "realityLabel": "Realitas",
+    "deluluLabel": "Delulu",
+    "or": "ATAU"
+  },
+  "situations": {
+    "s1": {
+      "situation": "Barista menggambar hati di cangkir kopimu.",
+      "reality": "Dia lagi latihan latte art. Mungkin dilakukan ke semua pelanggan.",
+      "delulu": "Dia suka aku. Besok aku balik dan minta nomornya."
     },
-    "q2": {
-      "text": "Pernah merencanakan masa depan dengan seseorang yang belum pernah kamu ajak bicara?",
-      "options": { "a": "Itu mengkhawatirkan", "b": "Mungkin membayangkan satu kencan", "c": "Sudah beri nama anak-anak", "d": "Sudah pilih tempat pernikahan" }
+    "s2": {
+      "situation": "Crush-mu melihat Instagram story-mu pertama.",
+      "reality": "Kebetulan lagi buka HP. Cuma urutan algoritma.",
+      "delulu": "Dia terus ngecek profilku. Ini udah kayak nembak."
     },
-    "q3": {
-      "text": "Ketika seseorang baik padamu, pikiran pertamamu?",
-      "options": { "a": "Mereka cuma sopan", "b": "Mungkin mereka suka aku?", "c": "Mereka pasti suka aku", "d": "Kita udah kayak pacaran" }
+    "s3": {
+      "situation": "Pewawancara bilang 'Itu mengesankan.'",
+      "reality": "Sopan santun wawancara standar. Mungkin bilang itu ke semua kandidat.",
+      "delulu": "Udah pasti diterima. Harusnya tanya kapan mulai kerja."
     },
-    "q4": {
-      "text": "Kamu percaya bisa jadi terkenal?",
-      "options": { "a": "Tidak juga", "b": "Mungkin di bidang niche", "c": "Tentu saja, cuma belum mulai", "d": "Aku sudah terkenal, orang-orang belum tahu aja" }
+    "s4": {
+      "situation": "Temanmu nggak ketawa sama jokes-mu.",
+      "reality": "Emang nggak lucu. Coba yang lebih bagus lain kali.",
+      "delulu": "Humor-ku terlalu tinggi buat mereka. Belum ada yang bisa ngerti jenius-ku."
     },
-    "q5": {
-      "text": "Seberapa sering kamu membayangkan pidato penerimaanmu?",
-      "options": { "a": "Untuk apa?", "b": "Satu-dua kali, iseng", "c": "Sudah hafal", "d": "Sudah berterima kasih ke orang tertentu" }
+    "s5": {
+      "situation": "Kirim pesan dan di-read tapi nggak dibales 3 jam.",
+      "reality": "Mungkin lagi sibuk. Orang punya kehidupan sendiri.",
+      "delulu": "Lagi mikirin balasan yang sempurna. Pesanku terlalu powerful."
     },
-    "q6": {
-      "text": "Seseorang membaca pesanmu tapi tidak membalas. Apa yang terjadi?",
-      "options": { "a": "Mereka sibuk", "b": "Mungkin memikirkan balasan sempurna", "c": "Terintimidasi oleh energiku", "d": "HP mereka rusak karena kekuatan pesanku" }
+    "s6": {
+      "situation": "Orang asing di jalan ngeliatin kamu dua kali.",
+      "reality": "Mungkin ada yang nempel di muka. Atau cuma lagi bengong.",
+      "delulu": "Terpesona sama aura-ku. Hari ini aku pasti lagi bersinar banget."
     },
-    "q7": {
-      "text": "Bagaimana kamu melihat dirimu 5 tahun lagi?",
-      "options": { "a": "Realistis bekerja", "b": "Sukses di bidangku", "c": "Menjalani hidup impian", "d": "Di sampul majalah" }
+    "s7": {
+      "situation": "Jawaban nebak di ujian ternyata bener.",
+      "reality": "Probabilitas 25% berhasil. Cuma hoki.",
+      "delulu": "Alam semesta di pihakku. Aku emang berbakat alami di ujian."
     },
-    "q8": {
-      "text": "Orang asing tersenyum padamu. Artinya?",
-      "options": { "a": "Tidak ada, mereka senyum ke semua orang", "b": "Mereka ramah saja", "c": "Mereka merasakan auraku", "d": "Cinta pada pandangan pertama" }
+    "s8": {
+      "situation": "Kamu presentasi dan audiens diam.",
+      "reality": "Membosankan atau mereka nggak nemu timing buat bereaksi.",
+      "delulu": "Mereka speechless karena impactnya. Presentasiku terlalu dahsyat."
     },
-    "q9": {
-      "text": "Kamu percaya manifestasi?",
-      "options": { "a": "Itu tidak nyata", "b": "Berpikir positif membantu", "c": "Aku manifestasi setiap hari", "d": "Kuis ini muncul juga karena aku manifestasikan" }
+    "s9": {
+      "situation": "Lagu favoritmu tiba-tiba diputar di radio.",
+      "reality": "Lagu populer, sering diputar. Cuma kebetulan.",
+      "delulu": "Tanda dari alam semesta. Hari ini bakal jadi hari spesial."
     },
-    "q10": {
-      "text": "Bagaimana kamu menangani penolakan?",
-      "options": { "a": "Terima dan lanjut", "b": "Sedikit sedih tapi ok", "c": "Rugi mereka, bukan aku", "d": "Mereka akan kembali, selalu begitu" }
-    },
-    "q11": {
-      "text": "Kamu melihat story Instagram gebetanmu. Kamu berpikir:",
-      "options": { "a": "Konten menarik", "b": "Lagi ngapain ya", "c": "Mereka posting itu buat aku", "d": "Ini pada dasarnya surat cinta" }
-    },
-    "q12": {
-      "text": "Saat bercermin, kamu melihat:",
-      "options": { "a": "Orang biasa", "b": "Seseorang yang punya potensi", "c": "Paket lengkap yang sudah diakui", "d": "Karakter utama alam semesta" }
+    "s10": {
+      "situation": "Mantan nge-like postingan media sosialmu.",
+      "reality": "Scroll tanpa pikir dan like karena kebiasaan. Nggak ada artinya.",
+      "delulu": "Belum bisa move on dari aku. Ini awal dari reunion arc kita."
     }
   },
   "result": {
-    "yourScore": "Skor Delulumu",
+    "yourScore": "Level Distorsimu",
     "analysis": "Analisis",
-    "retake": "Tes Lagi"
+    "retake": "Coba Lagi"
   },
   "results": {
-    "grounded": {
-      "name": "Realistis",
-      "tagline": "Realita dingin. Terapis menyukaimu.",
-      "analysis": "Kamu melihat dunia apa adanya — tanpa kacamata merah muda, tanpa soundtrack Hollywood. Saat yang lain bermimpi, kamu membaca situasi dengan tepat. Raja/Ratu realisme!"
+    "crystal": {
+      "name": "Lensa Kristal",
+      "tagline": "Melihat dunia apa adanya. Jernih dan transparan.",
+      "analysis": "Kamu membaca realitas dengan presisi. Tanpa kacamata rose, tanpa filter distorsi. Menilai situasi secara objektif dan bertindak berdasarkan fakta, bukan perasaan. Esensi realisme!"
     },
-    "slightly": {
-      "name": "Sedikit Delulu",
-      "tagline": "Sedikit fantasi yang sehat.",
-      "analysis": "Kamu punya campuran sehat antara fantasi dan realita. Bermimpi tapi juga pasang alarm. Keseimbangan sempurna antara harapan dan realisme!"
+    "tinted": {
+      "name": "Kaca Berwarna",
+      "tagline": "Cuma sedikit warna di atas realitas.",
+      "analysis": "Kebanyakan realistis, tapi kadang membiarkan imajinasi terbang. Filter positif yang sehat yang membuat hidup sedikit lebih seru. Master keseimbangan!"
     },
-    "solulu": {
-      "name": "Delulu adalah Solulu",
-      "tagline": "Titik manis delusi positif.",
-      "analysis": "Kamu memecahkan kodenya! Delusi positifmu benar-benar memupuk kepercayaan diri. Sains bilang sedikit bias peningkatan diri itu sehat — kamu bukti hidupnya!"
+    "rose": {
+      "name": "Filter Rose",
+      "tagline": "Kacamata rose klasik. Dunia terlihat sedikit lebih cantik.",
+      "analysis": "Setengah realitas, setengah fantasi! Kalau ada interpretasi positif, kamu pilih itu. Level distorsi ini bisa jadi sumber percaya diri. Di perbatasan di mana delulu jadi solulu!"
     },
-    "daydreamer": {
-      "name": "Pemimpi Profesional",
-      "tagline": "Hidup di dalam rom-com.",
-      "analysis": "Imajinasimu menjalankan studio produksi. Setiap gebetan adalah rom-com, setiap wawancara adalah origin story. Kamu tidak hanya bermimpi — kamu menyutradarai, memproduksi, dan membintangi film hidupmu."
+    "prism": {
+      "name": "Visi Prisma",
+      "tagline": "Kemampuan memecah realitas jadi pelangi.",
+      "analysis": "Skill interpretasimu udah level seni. Mengubah momen biasa jadi narasi dramatis. Dengan imajinasi sekaya itu, kamu selalu hidup di versi paling seru dari realitas!"
     },
-    "movie": {
-      "name": "Hidup di Film",
-      "tagline": "Disutradarai oleh imajinasimu.",
-      "analysis": "Realita? Tidak pernah dengar. Kamu ada di alam semesta di mana setiap orang asing jatuh cinta padamu, setiap kegagalan adalah plot twist. Level Delulumu telah melampaui pemahaman manusia. Ikonik."
+    "kaleidoscope": {
+      "name": "Mode Kaleidoskop",
+      "tagline": "Realitas? Kayaknya pernah denger...",
+      "analysis": "Field distorsi realitasmu legendaris. Setiap kebetulan adalah tanda kosmis, setiap senyuman adalah pengakuan, setiap kegagalan adalah plot twist sebelum sukses. Di duniamu, kamu selalu karakter utama. Ikonik!"
     }
   },
   "share": {
     "twitter": "Bagikan di X",
     "copyUrl": "Salin Link",
     "copied": "Link disalin!",
-    "text": "Skor Deluluku: {score}% - {tier}! Seberapa delulu kamu?"
+    "text": "Distorsi Realitasku: {score}%! Aku \"{tier}\" 🔮 Gimana lensamu?"
   }
 }

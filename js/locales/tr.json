@@ -1,102 +1,113 @@
 {
   "meta": {
-    "title": "Ne Kadar Delulu'sun?",
-    "description": "12 soruyla aşk, kariyer ve benlik imajındaki hayalperest özgüvenini ölç. Delulu Skorun kaç?"
+    "title": "Gerceklik Bozulma Filtresi - Delulu Skoru",
+    "description": "10 gunluk durum, gerceklik bozulma seviyeni ortaya cikarir. Gercekci vs delulu yorum — senin mercegin nasil?"
   },
-  "a11y": { "skip": "İçeriğe atla" },
+  "a11y": {
+    "skip": "Iceriye atla"
+  },
   "app": {
-    "title": "Ne Kadar Delulu'sun?",
-    "subtitle": "Aşk, kariyer ve benlik imajındaki hayalperest özgüvenini ölç",
-    "disclaimer": "Bu test sadece eğlence amaçlıdır, profesyonel psikolojik değerlendirme değildir.",
-    "start": "Teste Başla",
-    "questionInfo": "12 soru · ~2 dk"
+    "title": "Gerceklik Bozulma Filtresi",
+    "subtitle": "Mercegin ne kadar bozulmus?",
+    "disclaimer": "Bu test sadece eglence amacidir, profesyonel psikolojik degerlendirme degildir.",
+    "start": "Filtreyi Etkinlestir",
+    "questionInfo": "10 durum · ~2 dk"
   },
-  "questions": {
-    "q1": {
-      "text": "Hiç yaşanmayacak konuşmaları kafanızda prova eder misiniz?",
-      "options": { "a": "Asla", "b": "Ara sıra, duşta", "c": "Diyaloglu birden fazla senaryo", "d": "Tam bir senaryom var" }
+  "filter": {
+    "realistic": "Gercekci",
+    "delulu": "Delulu",
+    "realityLabel": "Gerceklik",
+    "deluluLabel": "Delulu",
+    "or": "VEYA"
+  },
+  "situations": {
+    "s1": {
+      "situation": "Barista kahve kupana bir kalp cizdi.",
+      "reality": "Latte art pratigi yapiyor. Muhtemelen her musteriye yapiyor.",
+      "delulu": "Benden hoslaniyor. Yarin gidip numarasini almaliyim."
     },
-    "q2": {
-      "text": "Hiç konuşmadığınız biriyle geleceğinizi planladınız mı?",
-      "options": { "a": "Bu endişe verici", "b": "Belki bir buluşma hayal ettim", "c": "Çocuklara isim koydum", "d": "Düğün mekanını seçtim" }
+    "s2": {
+      "situation": "Hoslandigin kisi Instagram hikayeni ilk o gordu.",
+      "reality": "Tesadufen telefona bakiyordu. Sadece algoritma sirasi.",
+      "delulu": "Surekli profilimi kontrol ediyor. Bu fiilen bir itiraf."
     },
-    "q3": {
-      "text": "Biri size iyi davrandığında ilk düşünceniz?",
-      "options": { "a": "Sadece kibar davranıyorlar", "b": "Acaba benden hoşlanıyorlar mı?", "c": "Kesinlikle benden hoşlanıyorlar", "d": "Artık neredeyse çıkıyoruz" }
+    "s3": {
+      "situation": "Mulakat yapan kisi 'Bu etkileyici' dedi.",
+      "reality": "Standart mulakat nezaketi. Muhtemelen her adaya ayni seyi soyler.",
+      "delulu": "Isi aldim zaten. Ne zaman baslayacagimi sormaliydum."
     },
-    "q4": {
-      "text": "Gerçekten denesen ünlü olabileceğine inanıyor musun?",
-      "options": { "a": "Pek değil", "b": "Belki niş bir alanda", "c": "Kesinlikle, henüz başlamadım", "d": "Zaten ünlüyüm, insanlar bilmiyor" }
+    "s4": {
+      "situation": "Arkadasin sakana gulmedi.",
+      "reality": "Komik degildi. Bir dahaki sefere daha iyisini denerim.",
+      "delulu": "Espri anlatisim onlar icin fazla ileri seviye. Henuz kimse dehami anlayamadi."
     },
-    "q5": {
-      "text": "Ödül konuşmanızı ne sıklıkla hayal ediyorsunuz?",
-      "options": { "a": "Ne ödülü?", "b": "Bir iki kez, eğlence olsun", "c": "Ezberledim", "d": "İsim vererek belirli kişilere teşekkür ettim" }
+    "s5": {
+      "situation": "Mesaj gonderdin ve 3 saattir goruldu olarak biraktin.",
+      "reality": "Muhtemelen mesgul. Insanlarin kendi hayati var.",
+      "delulu": "Mukemmel cevabi hazirliyorlar. Mesajim o kadar etkili oldu ki."
     },
-    "q6": {
-      "text": "Biri mesajınızı görüp cevap vermedi. Ne oldu?",
-      "options": { "a": "Meşguller", "b": "Mükemmel cevabı düşünüyor olabilirler", "c": "Enerjimden korkmuşlar", "d": "Mesajımın gücünden telefonları bozulmuş" }
+    "s6": {
+      "situation": "Sokakta bir yabanci sana iki kez bakti.",
+      "reality": "Yuzumde bir sey var herhalde. Ya da sadece dalginlardı.",
+      "delulu": "Auramdan etkilendiler. Bugun ozellikle parliyorum."
     },
-    "q7": {
-      "text": "5 yıl sonra kendinizi nasıl görüyorsunuz?",
-      "options": { "a": "Gerçekçi bir şekilde çalışıyor", "b": "Alanımda başarılı", "c": "Hayallerimi yaşıyor", "d": "Bir derginin kapağında" }
+    "s7": {
+      "situation": "Sinavda tahmin ettigin cevap dogru cikti.",
+      "reality": "%25 olasilik tuttu. Sadece sans.",
+      "delulu": "Evren benim tarafimda. Dogal olarak sinav sansliyim."
     },
-    "q8": {
-      "text": "Bir yabancı size gülümsedi. Ne anlama geliyor?",
-      "options": { "a": "Hiçbir şey, herkese gülümsüyorlar", "b": "Cana yakın davranıyorlar", "c": "Auramı hissettiler", "d": "İlk görüşte aşk" }
+    "s8": {
+      "situation": "Sunum yaptin ve dinleyiciler sessizdi.",
+      "reality": "Sikiciydi ya da tepki verme anini kacirdilar.",
+      "delulu": "Etkisinden konusamaz hale geldiler. Sunumum o kadar guclu oldu."
     },
-    "q9": {
-      "text": "Manifestasyona inanıyor musunuz?",
-      "options": { "a": "Gerçek değil", "b": "Pozitif düşünce yardımcı olur", "c": "Her gün manifeste ediyorum", "d": "Bu testin çıkmasını da ben manifeste ettim" }
+    "s9": {
+      "situation": "En sevdigin sarki birden radyoda caldi.",
+      "reality": "Populer bir sarki, sik caliniyor. Sadece tesaduf.",
+      "delulu": "Evren bana bir isaret gonderiyor. Bugun ozel bir gun olacak."
     },
-    "q10": {
-      "text": "Reddedilmeyle nasıl başa çıkarsınız?",
-      "options": { "a": "Kabul edip devam ederim", "b": "Biraz üzgün ama sorun yok", "c": "Onların kaybı, benim değil", "d": "Geri gelecekler, her zaman gelirler" }
-    },
-    "q11": {
-      "text": "Hoşlandığınız kişinin Instagram hikayesini gördünüz. Düşünceniz:",
-      "options": { "a": "İlginç içerik", "b": "Acaba ne yapıyor", "c": "Benim için paylaştı", "d": "Bu aslında bir aşk mektubu" }
-    },
-    "q12": {
-      "text": "Aynaya baktığınızda ne görürsünüz?",
-      "options": { "a": "Normal bir insan", "b": "Potansiyeli olan biri", "c": "Sertifikalı çekici biri", "d": "Evrenin ana karakteri" }
+    "s10": {
+      "situation": "Eski sevgilin sosyal medya paylasiminni begendi.",
+      "reality": "Dusunmeden kaydirip aliskanliktan begendi. Hicbir anlami yok.",
+      "delulu": "Hala beni unutamadi. Bu birlesme arkimizin baslangici."
     }
   },
   "result": {
-    "yourScore": "Delulu Skorunuz",
+    "yourScore": "Bozulma Seviyen",
     "analysis": "Analiz",
-    "retake": "Tekrar Test"
+    "retake": "Tekrar Dene"
   },
   "results": {
-    "grounded": {
-      "name": "Ayakları Yerde",
-      "tagline": "Soğuk gerçeklik. Terapistler seni seviyor.",
-      "analysis": "Dünyayı olduğu gibi görüyorsun — pembe gözlük yok, Hollywood müziği yok. Başkaları hayal kurarken sen durumu doğru okuyorsun. Realizmin kralı/kraliçesi!"
+    "crystal": {
+      "name": "Kristal Mercek",
+      "tagline": "Dunyayi oldugu gibi gormek. Net ve seffaf.",
+      "analysis": "Gercekligi hassas bir sekilde okuyorsun. Pembe gozluk yok, bozulma filtresi yok. Durumlari objektif degerlendirip, duygulara degil gerceklere gore hareket ediyorsun. Realizmin ozü!"
     },
-    "slightly": {
-      "name": "Hafif Delulu",
-      "tagline": "Sağlıklı bir tutam fantezi.",
-      "analysis": "Fantezi ve gerçekliğin sağlıklı bir karışımına sahipsin. Hayal kurarsın ama alarm da kurarsın. Umut ve realizm arasında mükemmel denge!"
+    "tinted": {
+      "name": "Renkli Cam",
+      "tagline": "Gerceklige hafif bir renk tonu.",
+      "analysis": "Cogunlukla gercekci ama bazen hayal gucune izin veriyorsun. Hayati biraz daha eglenceli yapan saglikli bir pozitif filtre. Denge ustasi!"
     },
-    "solulu": {
-      "name": "Delulu Solulu'dur",
-      "tagline": "Pozitif yanılsamanın tatlı noktası.",
-      "analysis": "Kodu çözdün! Pozitif yanılsamaların gerçekten özgüvenini besliyor. Bilim, biraz kendini yükseltme eğiliminin sağlıklı olduğunu söylüyor — sen yaşayan kanıtısın!"
+    "rose": {
+      "name": "Gul Filtresi",
+      "tagline": "Klasik pembe gozlukler. Dunya biraz daha guzel gorunuyor.",
+      "analysis": "Yarisı gercek, yarisi fantezi! Pozitif bir yorum varsa onu seciyorsun. Bu seviyedeki bozulma aslinda ozguven kaynagi olabilir. Delulu'nun solulu'ya donustugu sinir!"
     },
-    "daydreamer": {
-      "name": "Profesyonel Hayalperest",
-      "tagline": "Bir romantik komedide yaşıyor.",
-      "analysis": "Hayal gücün bir yapım stüdyosu işletiyor. Her hoşlandığın kişi bir rom-com, her iş görüşmesi senin köken hikâyen. Sen sadece hayal kurmuyorsun — hayatının filmini yönetip, yapıp, başrolde oynuyorsun."
+    "prism": {
+      "name": "Prizma Gorusu",
+      "tagline": "Gercekligi gokkusagina kirma yetisi.",
+      "analysis": "Yorum yeteneklerin sanat seviyesinde. Siradan anlari dramatik anlatilara donusturuyorsun. Bu kadar zengin bir hayal gucuyle her zaman gercekligin en eglenceli versiyonunda yasiyorsun!"
     },
-    "movie": {
-      "name": "Bir Filmde Yaşıyor",
-      "tagline": "Hayal gücünün yönettiği hayat.",
-      "analysis": "Gerçeklik? Hiç duymadım. Her yabancının sana âşık olduğu, her aksilik'in bir senaryo değişikliği olduğu bir evrende yaşıyorsun. Delulu seviyen insan anlayışını aştı. İkonik."
+    "kaleidoscope": {
+      "name": "Kaleydoskop Modu",
+      "tagline": "Gerceklik? Belli belirsiz taninyor...",
+      "analysis": "Gerceklik bozulma alanin efsanevi. Her tesaduf kozmik bir isaret, her gulumseme bir itiraf, her basarisizlik basaridan onceki bir senaryo donusu. Senin dunyanda sen her zaman ana karaktersin. Ikonik!"
     }
   },
   "share": {
-    "twitter": "X'te Paylaş",
-    "copyUrl": "Bağlantıyı Kopyala",
-    "copied": "Kopyalandı!",
-    "text": "Delulu Skorum: {score}% - {tier}! Sen ne kadar Delulu'sun?"
+    "twitter": "X'te Paylas",
+    "copyUrl": "Linki Kopyala",
+    "copied": "Link kopyalandi!",
+    "text": "Gerceklik Bozulmam: {score}%! Ben \"{tier}\" 🔮 Senin mercegin nasil?"
   }
 }

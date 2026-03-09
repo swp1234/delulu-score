@@ -1,7 +1,7 @@
 /* ========================================
-   Delulu Score - App Logic
-   12 questions, 4 options each (0-3 pts)
-   Score = (raw/36)*100, 5 tiers
+   Delulu Score - Reality Distortion Filter
+   10 situations, dual-card selection
+   Distortion gauge + progressive visual FX
    ======================================== */
 
 (async function () {
@@ -19,40 +19,29 @@
     }
 
     // --- Constants ---
-    var TOTAL_QUESTIONS = 12;
-    var MAX_RAW = 36; // 12 questions * 3 max points each
-
-    // Points per option for each question: [a, b, c, d]
-    var pointMap = [
-      [0, 1, 2, 3], // q1
-      [0, 1, 2, 3], // q2
-      [0, 1, 2, 3], // q3
-      [0, 1, 2, 3], // q4
-      [0, 1, 2, 3], // q5
-      [0, 1, 2, 3], // q6
-      [0, 1, 2, 3], // q7
-      [0, 1, 2, 3], // q8
-      [0, 1, 2, 3], // q9
-      [0, 1, 2, 3], // q10
-      [0, 1, 2, 3], // q11
-      [0, 1, 2, 3]  // q12
-    ];
+    var TOTAL = 10;
 
     // --- State ---
-    var currentQuestion = 0;
-    var totalPoints = 0;
+    var currentIndex = 0;
+    var deluluCount = 0; // number of delulu choices
 
     // --- DOM Elements ---
     var startScreen = document.getElementById('start-screen');
-    var quizScreen = document.getElementById('quiz-screen');
+    var filterScreen = document.getElementById('filter-screen');
     var resultScreen = document.getElementById('result-screen');
     var startBtn = document.getElementById('start-btn');
     var progressFill = document.getElementById('progress-fill');
     var currentQEl = document.getElementById('current-q');
     var totalQEl = document.getElementById('total-q');
-    var questionText = document.getElementById('question-text');
-    var optionsContainer = document.getElementById('options-container');
-    var quizCard = document.querySelector('.quiz-card');
+    var situationText = document.getElementById('situation-text');
+    var realityText = document.getElementById('reality-text');
+    var deluluText = document.getElementById('delulu-text');
+    var cardReality = document.getElementById('card-reality');
+    var cardDelulu = document.getElementById('card-delulu');
+    var filterCard = document.querySelector('.filter-card');
+    var gaugeFill = document.getElementById('gauge-fill');
+    var gaugeIndicator = document.getElementById('gauge-indicator');
+    var distortionBg = document.getElementById('distortion-bg');
     var themeToggle = document.getElementById('theme-toggle');
     var langSelect = document.getElementById('lang-select');
     var retakeBtn = document.getElementById('retake-btn');
@@ -107,128 +96,173 @@
 
     langSelect.addEventListener('change', async function () {
       await i18n.setLanguage(this.value);
-      if (quizScreen.classList.contains('active')) {
-        renderQuestion(currentQuestion);
+      if (filterScreen.classList.contains('active')) {
+        renderSituation(currentIndex);
       }
       if (resultScreen.classList.contains('active')) {
-        var finalScore = Math.round((totalPoints / MAX_RAW) * 100);
-        if (finalScore > 100) finalScore = 100;
+        var finalScore = Math.round((deluluCount / TOTAL) * 100);
         showResult(finalScore);
       }
     });
 
     // --- Screen Navigation ---
     function showScreen(screen) {
-      [startScreen, quizScreen, resultScreen].forEach(function (s) {
+      [startScreen, filterScreen, resultScreen].forEach(function (s) {
         s.classList.remove('active');
       });
       screen.classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // --- Start Quiz ---
-    startBtn.addEventListener('click', function () {
-      currentQuestion = 0;
-      totalPoints = 0;
-      showScreen(quizScreen);
-      renderQuestion(0);
+    // --- Distortion Visual Effects ---
+    function updateDistortion() {
+      var ratio = deluluCount / Math.max(currentIndex + 1, 1);
+      var pct = ratio * 100;
 
-      // GA4 event
+      // Update gauge
+      gaugeFill.style.width = pct + '%';
+      gaugeIndicator.style.left = pct + '%';
+
+      // Color shift on gauge indicator
+      if (pct < 30) {
+        gaugeIndicator.style.background = '#60A5FA';
+      } else if (pct < 60) {
+        gaugeIndicator.style.background = '#FF6B9D';
+      } else {
+        gaugeIndicator.style.background = '#F472B6';
+      }
+
+      // Distortion level for background (1-5 based on current delulu ratio)
+      var level = 0;
+      if (pct >= 80) level = 5;
+      else if (pct >= 60) level = 4;
+      else if (pct >= 40) level = 3;
+      else if (pct >= 20) level = 2;
+      else if (pct > 0) level = 1;
+
+      // Remove all distortion classes
+      for (var i = 1; i <= 5; i++) {
+        distortionBg.classList.remove('distortion-level-' + i);
+        document.body.classList.remove('distortion-level-' + i + '-body');
+      }
+
+      if (level > 0) {
+        distortionBg.classList.add('distortion-level-' + level);
+        if (level >= 3) {
+          document.body.classList.add('distortion-level-' + level + '-body');
+        }
+      }
+    }
+
+    // --- Start ---
+    startBtn.addEventListener('click', function () {
+      currentIndex = 0;
+      deluluCount = 0;
+      // Reset distortion
+      for (var i = 1; i <= 5; i++) {
+        distortionBg.classList.remove('distortion-level-' + i);
+        document.body.classList.remove('distortion-level-' + i + '-body');
+      }
+      gaugeFill.style.width = '0%';
+      gaugeIndicator.style.left = '0%';
+
+      showScreen(filterScreen);
+      renderSituation(0);
+
       if (typeof gtag === 'function') {
-        gtag('event', 'quiz_start', {
-          event_category: 'delulu_score'
-        });
+        gtag('event', 'quiz_start', { event_category: 'delulu_score' });
       }
     });
 
-    // --- Render Question ---
-    function renderQuestion(index) {
-      var qNum = index + 1;
-      currentQEl.textContent = qNum;
-      totalQEl.textContent = TOTAL_QUESTIONS;
-      progressFill.style.width = ((qNum / TOTAL_QUESTIONS) * 100) + '%';
+    // --- Render Situation ---
+    function renderSituation(index) {
+      var num = index + 1;
+      currentQEl.textContent = num;
+      totalQEl.textContent = TOTAL;
+      progressFill.style.width = ((num / TOTAL) * 100) + '%';
 
-      var qKey = 'questions.q' + qNum + '.text';
-      questionText.textContent = t(qKey) || qKey;
+      situationText.textContent = t('situations.s' + num + '.situation') || 'Situation ' + num;
+      realityText.textContent = t('situations.s' + num + '.reality') || '';
+      deluluText.textContent = t('situations.s' + num + '.delulu') || '';
 
-      optionsContainer.innerHTML = '';
-      var optionKeys = ['a', 'b', 'c', 'd'];
-
-      optionKeys.forEach(function (key, idx) {
-        var btn = document.createElement('button');
-        btn.className = 'option-btn';
-        var optKey = 'questions.q' + qNum + '.options.' + key;
-        btn.textContent = t(optKey) || optKey;
-        btn.addEventListener('click', function () {
-          selectOption(index, idx);
-        });
-        optionsContainer.appendChild(btn);
-      });
+      // Reset card states
+      cardReality.classList.remove('selected-reality', 'selected-delulu', 'not-selected');
+      cardDelulu.classList.remove('selected-reality', 'selected-delulu', 'not-selected');
+      cardReality.disabled = false;
+      cardDelulu.disabled = false;
     }
 
-    // --- Select Option ---
-    function selectOption(questionIndex, optionIndex) {
-      var points = pointMap[questionIndex][optionIndex];
-      totalPoints += points;
+    // --- Card Selection ---
+    function handleSelection(isDelulu) {
+      if (isDelulu) {
+        deluluCount++;
+        cardDelulu.classList.add('selected-delulu');
+        cardReality.classList.add('not-selected');
+      } else {
+        cardReality.classList.add('selected-reality');
+        cardDelulu.classList.add('not-selected');
+      }
 
-      // Highlight selected
-      var buttons = optionsContainer.querySelectorAll('.option-btn');
-      buttons[optionIndex].classList.add('selected');
+      cardReality.disabled = true;
+      cardDelulu.disabled = true;
 
-      // Disable all buttons
-      buttons.forEach(function (btn) {
-        btn.disabled = true;
-        btn.style.pointerEvents = 'none';
-      });
+      // Update distortion gauge
+      updateDistortion();
 
-      // Next question or result
+      // Next or result
       setTimeout(function () {
-        if (currentQuestion < TOTAL_QUESTIONS - 1) {
-          currentQuestion++;
-          quizCard.classList.add('slide-out');
+        if (currentIndex < TOTAL - 1) {
+          currentIndex++;
+          filterCard.classList.add('card-exit');
           setTimeout(function () {
-            renderQuestion(currentQuestion);
-            quizCard.classList.remove('slide-out');
-            quizCard.classList.add('slide-in');
+            renderSituation(currentIndex);
+            filterCard.classList.remove('card-exit');
+            filterCard.classList.add('card-enter');
             setTimeout(function () {
-              quizCard.classList.remove('slide-in');
-            }, 300);
-          }, 300);
+              filterCard.classList.remove('card-enter');
+            }, 350);
+          }, 350);
         } else {
-          // Calculate percentage
-          var finalScore = Math.round((totalPoints / MAX_RAW) * 100);
-          if (finalScore > 100) finalScore = 100;
+          var finalScore = Math.round((deluluCount / TOTAL) * 100);
           showScreen(resultScreen);
           showResult(finalScore);
         }
-      }, 400);
+      }, 500);
     }
+
+    cardReality.addEventListener('click', function () {
+      if (!cardReality.disabled) handleSelection(false);
+    });
+
+    cardDelulu.addEventListener('click', function () {
+      if (!cardDelulu.disabled) handleSelection(true);
+    });
 
     // --- Get Tier ---
     function getTier(score) {
-      if (score >= 81) return 'movie';
-      if (score >= 61) return 'daydreamer';
-      if (score >= 41) return 'solulu';
-      if (score >= 21) return 'slightly';
-      return 'grounded';
+      if (score >= 80) return 'kaleidoscope';
+      if (score >= 60) return 'prism';
+      if (score >= 40) return 'rose';
+      if (score >= 20) return 'tinted';
+      return 'crystal';
     }
 
     // --- Tier Emojis ---
     var tierEmojis = {
-      grounded: '\u{1F9CA}',    // ice cube
-      slightly: '\u{1F324}\uFE0F', // sun behind small cloud
-      solulu: '\u2728',          // sparkles
-      daydreamer: '\u{1F98B}',  // butterfly
-      movie: '\u{1F3AC}'        // clapper board
+      crystal: '\uD83D\uDD2C',     // microscope
+      tinted: '\uD83D\uDE0E',      // sunglasses face
+      rose: '\uD83C\uDF39',        // rose
+      prism: '\uD83D\uDD2E',       // crystal ball
+      kaleidoscope: '\u2728'        // sparkles
     };
 
     // --- Tier CSS classes ---
     var tierClasses = {
-      grounded: 'tier-grounded',
-      slightly: 'tier-slightly',
-      solulu: 'tier-solulu',
-      daydreamer: 'tier-daydreamer',
-      movie: 'tier-movie'
+      crystal: 'tier-crystal',
+      tinted: 'tier-tinted',
+      rose: 'tier-rose',
+      prism: 'tier-prism',
+      kaleidoscope: 'tier-kaleidoscope'
     };
 
     // --- Animate Score Counter ---
@@ -238,7 +272,6 @@
       function step(timestamp) {
         if (!startTime) startTime = timestamp;
         var progress = Math.min((timestamp - startTime) / duration, 1);
-        // Ease out cubic
         var eased = 1 - Math.pow(1 - progress, 3);
         var current = Math.round(eased * target);
         scoreNumber.textContent = current;
@@ -252,15 +285,11 @@
 
     // --- Animate Meter Arc ---
     function animateMeter(score) {
-      // Circle circumference = 2 * PI * 85 ~= 534
       var circumference = 534;
       var offset = circumference - (circumference * score / 100);
-      // Reset first
       meterArc.style.transition = 'none';
       meterArc.style.strokeDashoffset = circumference;
-      // Force reflow
       void meterArc.offsetWidth;
-      // Animate
       meterArc.style.transition = 'stroke-dashoffset 2s cubic-bezier(0.4, 0, 0.2, 1)';
       setTimeout(function () {
         meterArc.style.strokeDashoffset = offset;
@@ -271,31 +300,20 @@
     function showResult(score) {
       var tier = getTier(score);
 
-      // Emoji
       document.getElementById('result-emoji').textContent = tierEmojis[tier];
-
-      // Animate score
       animateCounter(score, 2000);
-
-      // Animate meter
       animateMeter(score);
 
-      // Tier name with styling
       var tierEl = document.getElementById('result-tier');
       tierEl.textContent = t('results.' + tier + '.name');
-      // Remove all tier classes, add current
       Object.values(tierClasses).forEach(function (cls) {
         tierEl.classList.remove(cls);
       });
       tierEl.classList.add(tierClasses[tier]);
 
-      // Description (tagline)
       document.getElementById('result-desc').textContent = t('results.' + tier + '.tagline');
-
-      // Analysis
       document.getElementById('result-analysis').textContent = t('results.' + tier + '.analysis');
 
-      // GA4 event
       if (typeof gtag === 'function') {
         gtag('event', 'quiz_complete', {
           event_category: 'delulu_score',
@@ -311,7 +329,7 @@
       var tier = getTier(score);
       var tierName = t('results.' + tier + '.name');
       var emoji = tierEmojis[tier];
-      var shareText = t('share.text') || 'My Delulu Score: {score}% - {tier}!';
+      var shareText = t('share.text') || 'My Reality Distortion: {score}% - {tier}!';
       var text = emoji + ' ' + shareText.replace('{score}', score).replace('{tier}', tierName);
       var url = 'https://dopabrain.com/delulu-score/';
       window.open(
@@ -379,14 +397,17 @@
 
     // --- Retake ---
     retakeBtn.addEventListener('click', function () {
-      currentQuestion = 0;
-      totalPoints = 0;
+      currentIndex = 0;
+      deluluCount = 0;
+      // Reset distortion
+      for (var i = 1; i <= 5; i++) {
+        distortionBg.classList.remove('distortion-level-' + i);
+        document.body.classList.remove('distortion-level-' + i + '-body');
+      }
       showScreen(startScreen);
 
       if (typeof gtag === 'function') {
-        gtag('event', 'quiz_retake', {
-          event_category: 'delulu_score'
-        });
+        gtag('event', 'quiz_retake', { event_category: 'delulu_score' });
       }
     });
 
@@ -397,7 +418,6 @@
     }
 
   } catch (e) {
-    // i18n or init error - hide loader anyway
     console.error('App init error:', e);
     var loader = document.getElementById('app-loader');
     if (loader) loader.classList.add('hidden');

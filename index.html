@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="meta.title">나는 얼마나 델루루일까?</title>
-<meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="12가지 질문으로 당신의 델루루 점수를 측정해 보세요. 연애, 커리어, 자기 이미지에서 당신의 망상 자신감은 몇 점?">
-<meta name="keywords" content="delulu score, delulu test, delusional confidence, 델루루 테스트, 망상 테스트, personality quiz">
+<title data-i18n="meta.title">Reality Distortion Filter</title>
+<meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="10가지 일상 상황으로 당신의 현실 왜곡도를 측정하세요. 현실적 vs 델루루 해석 중 어느 쪽이 당신에게 더 가까운가요?">
+<meta name="keywords" content="delulu score, delulu test, reality distortion, 델루루 테스트, 현실왜곡, personality quiz">
 
 <!-- Canonical & Hreflang -->
 <link rel="canonical" href="https://dopabrain.com/delulu-score/">
@@ -25,16 +25,16 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" data-i18n-attr="content" data-i18n="meta.title" content="나는 얼마나 델루루일까?">
-<meta property="og:description" data-i18n-attr="content" data-i18n="meta.description" content="12가지 질문으로 당신의 델루루 점수를 측정해 보세요.">
+<meta property="og:title" data-i18n-attr="content" data-i18n="meta.title" content="Reality Distortion Filter">
+<meta property="og:description" data-i18n-attr="content" data-i18n="meta.description" content="10 everyday situations reveal your reality distortion level.">
 <meta property="og:url" content="https://dopabrain.com/delulu-score/">
 <meta property="og:site_name" content="DopaBrain">
 <meta property="og:locale" content="ko_KR">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" data-i18n-attr="content" data-i18n="meta.title" content="How Delulu Are You?">
-<meta name="twitter:description" data-i18n-attr="content" data-i18n="meta.description" content="12 questions to measure your delusional confidence in romance, career, and self-image.">
+<meta name="twitter:title" data-i18n-attr="content" data-i18n="meta.title" content="Reality Distortion Filter">
+<meta name="twitter:description" data-i18n-attr="content" data-i18n="meta.description" content="10 everyday situations reveal your reality distortion level.">
 
 <!-- Styles -->
 <link rel="stylesheet" href="css/style.css">
@@ -44,9 +44,9 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "How Delulu Are You?",
-  "alternateName": "나는 얼마나 델루루일까?",
-  "description": "A fun personality quiz measuring your delusional confidence in romance, career, and self-image through 12 questions. Get your Delulu Score percentage and discover your tier.",
+  "name": "Reality Distortion Filter - Delulu Score",
+  "alternateName": "현실왜곡 필터 - 델루루 점수",
+  "description": "10 everyday situations with dual interpretations reveal your reality distortion level through an interactive filter mechanic.",
   "url": "https://dopabrain.com/delulu-score/",
   "applicationCategory": "EntertainmentApplication",
   "operatingSystem": "Any",
@@ -71,7 +71,7 @@
 <!-- App Loader -->
 <div id="app-loader" class="app-loader">
   <div class="loader-content">
-    <div class="loader-emoji">💭</div>
+    <div class="loader-emoji">🔮</div>
     <div class="loader-spinner"></div>
   </div>
 </div>
@@ -100,42 +100,71 @@
   </div>
 </header>
 
+<!-- Background distortion layer -->
+<div id="distortion-bg" class="distortion-bg" aria-hidden="true">
+  <div class="distortion-orb orb-1"></div>
+  <div class="distortion-orb orb-2"></div>
+  <div class="distortion-orb orb-3"></div>
+</div>
+
 <!-- Main Content -->
 <main id="main-content" class="container">
 
   <!-- Start Screen -->
   <section id="start-screen" class="screen active">
     <div class="card glass-card start-card">
-      <div class="clouds-container" aria-hidden="true">
-        <div class="cloud cloud-1">☁️</div>
-        <div class="cloud cloud-2">💭</div>
-        <div class="cloud cloud-3">☁️</div>
-        <div class="bubble bubble-1"></div>
-        <div class="bubble bubble-2"></div>
-        <div class="bubble bubble-3"></div>
-        <div class="bubble bubble-4"></div>
-        <div class="bubble bubble-5"></div>
+      <div class="prism-container" aria-hidden="true">
+        <div class="prism-beam beam-1"></div>
+        <div class="prism-beam beam-2"></div>
+        <div class="prism-beam beam-3"></div>
       </div>
-      <div class="app-emoji">💭</div>
-      <h1 data-i18n="app.title">나는 얼마나 델루루일까?</h1>
-      <p class="subtitle" data-i18n="app.subtitle">연애, 커리어, 자기 이미지 — 당신의 망상 자신감을 측정해 보세요</p>
-      <p class="disclaimer" data-i18n="app.disclaimer">이 테스트는 재미를 위한 것이며, 전문적인 심리 검사가 아닙니다.</p>
-      <button id="start-btn" class="btn btn-primary" data-i18n="app.start">테스트 시작</button>
-      <p class="question-info" data-i18n="app.questionInfo">12개 질문 · 약 2분</p>
+      <div class="app-emoji">🔮</div>
+      <h1 data-i18n="app.title">Reality Distortion Filter</h1>
+      <p class="subtitle" data-i18n="app.subtitle">How distorted is your lens on reality?</p>
+      <p class="disclaimer" data-i18n="app.disclaimer">For entertainment only. Not a professional assessment.</p>
+      <button id="start-btn" class="btn btn-primary" data-i18n="app.start">Activate Filter</button>
+      <p class="question-info" data-i18n="app.questionInfo">10 situations · ~2 min</p>
     </div>
   </section>
 
-  <!-- Quiz Screen -->
-  <section id="quiz-screen" class="screen">
-    <div class="card glass-card quiz-card">
+  <!-- Filter Screen -->
+  <section id="filter-screen" class="screen">
+    <div class="card glass-card filter-card">
+      <!-- Progress -->
       <div class="progress-bar">
         <div id="progress-fill" class="progress-fill"></div>
       </div>
       <div class="question-counter">
-        <span id="current-q">1</span> / <span id="total-q">12</span>
+        <span id="current-q">1</span> / <span id="total-q">10</span>
       </div>
-      <h2 id="question-text" class="question-text"></h2>
-      <div id="options-container" class="options-container"></div>
+
+      <!-- Distortion Gauge -->
+      <div class="gauge-container">
+        <div class="gauge-label gauge-label-left" data-i18n="filter.realistic">Realistic</div>
+        <div class="gauge-track">
+          <div id="gauge-fill" class="gauge-fill"></div>
+          <div id="gauge-indicator" class="gauge-indicator"></div>
+        </div>
+        <div class="gauge-label gauge-label-right" data-i18n="filter.delulu">Delulu</div>
+      </div>
+
+      <!-- Situation -->
+      <div id="situation-text" class="situation-text"></div>
+
+      <!-- Dual Cards -->
+      <div class="dual-cards">
+        <button id="card-reality" class="interpretation-card card-reality" aria-label="Realistic interpretation">
+          <div class="card-badge" data-i18n="filter.realityLabel">Reality</div>
+          <p id="reality-text" class="card-text"></p>
+        </button>
+        <div class="card-divider">
+          <span data-i18n="filter.or">OR</span>
+        </div>
+        <button id="card-delulu" class="interpretation-card card-delulu" aria-label="Delulu interpretation">
+          <div class="card-badge badge-delulu" data-i18n="filter.deluluLabel">Delulu</div>
+          <p id="delulu-text" class="card-text"></p>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -143,8 +172,8 @@
   <section id="result-screen" class="screen">
     <div class="card glass-card result-card">
       <div class="result-reveal">
-        <div id="result-emoji" class="result-emoji">✨</div>
-        <h2 data-i18n="result.yourScore" class="result-label">Your Delulu Score</h2>
+        <div id="result-emoji" class="result-emoji">🔮</div>
+        <h2 data-i18n="result.yourScore" class="result-label">Your Distortion Level</h2>
         <div class="score-meter-container">
           <svg class="score-meter" viewBox="0 0 200 200" aria-hidden="true">
             <circle class="meter-track" cx="100" cy="100" r="85" />
@@ -161,15 +190,15 @@
 
       <div class="result-details">
         <div class="result-section">
-          <h3 data-i18n="result.analysis">분석</h3>
+          <h3 data-i18n="result.analysis">Analysis</h3>
           <p id="result-analysis" class="result-analysis-text"></p>
         </div>
       </div>
 
       <div class="result-actions">
-        <button id="share-twitter" class="btn btn-share btn-twitter" data-i18n="share.twitter">트위터 공유</button>
-        <button id="share-copy" class="btn btn-share btn-copy" data-i18n="share.copyUrl">링크 복사</button>
-        <button id="retake-btn" class="btn btn-primary" data-i18n="result.retake">다시 테스트</button>
+        <button id="share-twitter" class="btn btn-share btn-twitter" data-i18n="share.twitter">Share on X</button>
+        <button id="share-copy" class="btn btn-share btn-copy" data-i18n="share.copyUrl">Copy Link</button>
+        <button id="retake-btn" class="btn btn-primary" data-i18n="result.retake">Try Again</button>
       </div>
     </div>
 

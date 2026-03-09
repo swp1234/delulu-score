@@ -1,164 +1,113 @@
 {
   "meta": {
-    "title": "¿Qué tan Delulu eres?",
-    "description": "12 preguntas para medir tu confianza delirante en el amor, la carrera y la autoimagen. ¿Cuál es tu Delulu Score?"
+    "title": "Filtro de Distorsion de Realidad - Delulu Score",
+    "description": "10 situaciones cotidianas revelan tu nivel de distorsion de la realidad. Interpretacion realista vs delulu, cual es tu lente?"
   },
   "a11y": {
     "skip": "Saltar al contenido"
   },
   "app": {
-    "title": "¿Qué tan Delulu eres?",
-    "subtitle": "Mide tu confianza delirante en el amor, la carrera y la autoimagen",
-    "disclaimer": "Este test es solo por diversión y no es una evaluación psicológica profesional.",
-    "start": "Iniciar Test",
-    "questionInfo": "12 preguntas · ~2 min"
+    "title": "Filtro de Distorsion de Realidad",
+    "subtitle": "Que tan distorsionado esta tu lente de la realidad?",
+    "disclaimer": "Este test es solo para entretenimiento, no es una evaluacion psicologica profesional.",
+    "start": "Activar Filtro",
+    "questionInfo": "10 situaciones · ~2 min"
   },
-  "questions": {
-    "q1": {
-      "text": "¿Ensayas conversaciones que nunca van a pasar?",
-      "options": {
-        "a": "Nunca",
-        "b": "A veces, en la ducha",
-        "c": "Múltiples escenarios con diálogos",
-        "d": "Tengo un guion completo"
-      }
+  "filter": {
+    "realistic": "Realista",
+    "delulu": "Delulu",
+    "realityLabel": "Realidad",
+    "deluluLabel": "Delulu",
+    "or": "O"
+  },
+  "situations": {
+    "s1": {
+      "situation": "El barista dibujo un corazon en tu taza de cafe.",
+      "reality": "Esta practicando latte art. Probablemente lo hace con todos los clientes.",
+      "delulu": "Le gusto. Manana vuelvo y le pido su numero."
     },
-    "q2": {
-      "text": "¿Has planeado tu futuro con alguien con quien nunca has hablado?",
-      "options": {
-        "a": "Eso es preocupante",
-        "b": "Quizás imaginé una cita",
-        "c": "Ya nombré a nuestros hijos",
-        "d": "Ya elegí el lugar de la boda"
-      }
+    "s2": {
+      "situation": "Tu crush vio tu historia de Instagram primero.",
+      "reality": "Estaba en el telefono por casualidad. Es solo el orden del algoritmo.",
+      "delulu": "Esta revisando mi perfil constantemente. Esto es basicamente una declaracion."
     },
-    "q3": {
-      "text": "Cuando alguien es amable contigo, tu primer pensamiento es:",
-      "options": {
-        "a": "Solo es educado",
-        "b": "¿Será que le gusto?",
-        "c": "Definitivamente le gusto",
-        "d": "Básicamente ya estamos saliendo"
-      }
+    "s3": {
+      "situation": "El entrevistador dijo 'Eso es impresionante.'",
+      "reality": "Cortesia estandar de entrevista. Probablemente dice eso a todos los candidatos.",
+      "delulu": "Basicamente ya tengo el trabajo. Deberia haber preguntado cuando empiezo."
     },
-    "q4": {
-      "text": "¿Crees que podrías ser famoso si realmente lo intentaras?",
-      "options": {
-        "a": "No realmente",
-        "b": "Quizás en un nicho",
-        "c": "Por supuesto, solo no he empezado",
-        "d": "Ya soy famoso, la gente no lo sabe aún"
-      }
+    "s4": {
+      "situation": "Tu amigo no se rio de tu chiste.",
+      "reality": "Simplemente no era gracioso. Intentare uno mejor la proxima vez.",
+      "delulu": "Mi humor es demasiado avanzado para ellos. Nadie entiende mi genialidad aun."
     },
-    "q5": {
-      "text": "¿Con qué frecuencia imaginas tu discurso de aceptación?",
-      "options": {
-        "a": "¿De qué premio?",
-        "b": "Una o dos veces, por diversión",
-        "c": "Lo tengo memorizado",
-        "d": "He agradecido a personas específicas por nombre"
-      }
+    "s5": {
+      "situation": "Enviaste un mensaje y te dejaron en visto por 3 horas.",
+      "reality": "Probablemente estan ocupados. La gente tiene su propia vida.",
+      "delulu": "Estan creando la respuesta perfecta. Mi mensaje fue demasiado poderoso."
     },
-    "q6": {
-      "text": "Alguien te dejó en visto. ¿Qué pasó?",
-      "options": {
-        "a": "Están ocupados",
-        "b": "Están pensando en la respuesta perfecta",
-        "c": "Mi energía los intimidó",
-        "d": "Mi mensaje fue tan poderoso que les rompió el teléfono"
-      }
+    "s6": {
+      "situation": "Un extrano en la calle te miro dos veces.",
+      "reality": "Probablemente tengo algo en la cara. O solo estaban distraidos.",
+      "delulu": "Quedaron hipnotizados por mi aura. Debo estar irradiando hoy."
     },
-    "q7": {
-      "text": "¿Cómo te ves en 5 años?",
-      "options": {
-        "a": "Trabajando de forma realista",
-        "b": "Exitoso en mi campo",
-        "c": "Viviendo mi vida soñada",
-        "d": "En la portada de una revista"
-      }
+    "s7": {
+      "situation": "Adivinaste la respuesta correcta en un examen.",
+      "reality": "La probabilidad del 25% funciono. Solo fue suerte.",
+      "delulu": "El universo esta de mi lado. Tengo un don natural para los examenes."
     },
-    "q8": {
-      "text": "Un desconocido te sonrió. ¿Qué significa?",
-      "options": {
-        "a": "Nada, le sonríe a todos",
-        "b": "Solo es amigable",
-        "c": "Notó mi vibra",
-        "d": "Fue amor a primera vista"
-      }
+    "s8": {
+      "situation": "Diste una presentacion y la audiencia estaba en silencio.",
+      "reality": "Fue aburrido o no encontraron el momento para reaccionar.",
+      "delulu": "Se quedaron sin palabras por el impacto. Mi presentacion fue tan poderosa."
     },
-    "q9": {
-      "text": "¿Crees en manifestar?",
-      "options": {
-        "a": "No es real",
-        "b": "El pensamiento positivo ayuda",
-        "c": "Manifiesto a diario",
-        "d": "Manifesté que apareciera este quiz"
-      }
+    "s9": {
+      "situation": "Tu cancion favorita sono de repente en la radio.",
+      "reality": "Es una cancion popular, suena seguido. Solo una coincidencia.",
+      "delulu": "El universo me esta enviando una senal. Hoy va a ser un dia especial."
     },
-    "q10": {
-      "text": "¿Cómo manejas el rechazo?",
-      "options": {
-        "a": "Lo acepto y sigo adelante",
-        "b": "Un poco triste pero bien",
-        "c": "Es su pérdida, no la mía",
-        "d": "Van a volver, siempre lo hacen"
-      }
-    },
-    "q11": {
-      "text": "Ves la historia de Instagram de tu crush. Piensas:",
-      "options": {
-        "a": "Contenido interesante",
-        "b": "Me pregunto qué estará haciendo",
-        "c": "Lo publicó para mí",
-        "d": "Esto es básicamente una carta de amor"
-      }
-    },
-    "q12": {
-      "text": "Cuando te miras al espejo, ves:",
-      "options": {
-        "a": "Una persona normal",
-        "b": "Alguien con potencial",
-        "c": "Un partido certificado",
-        "d": "El protagonista del universo"
-      }
+    "s10": {
+      "situation": "Tu ex le dio like a tu publicacion en redes sociales.",
+      "reality": "Estaba scrolleando sin pensar y le dio like por habito. No significa nada.",
+      "delulu": "No me ha superado. Este es el comienzo de nuestro arco de reunion."
     }
   },
   "result": {
-    "yourScore": "Tu Delulu Score",
-    "analysis": "Análisis",
-    "retake": "Repetir Test"
+    "yourScore": "Tu Nivel de Distorsion",
+    "analysis": "Analisis",
+    "retake": "Intentar de Nuevo"
   },
   "results": {
-    "grounded": {
-      "name": "Con los pies en la tierra",
-      "tagline": "La fría realidad. Los terapeutas te aman.",
-      "analysis": "Ves el mundo tal como es — sin lentes color rosa, sin bandas sonoras de Hollywood. Mientras otros fantasean con su crush, tú estás leyendo la situación correctamente. ¡Tu terapeuta estaría orgulloso. Rey/reina del realismo!"
+    "crystal": {
+      "name": "Lente de Cristal",
+      "tagline": "Viendo el mundo tal como es. Claro y transparente.",
+      "analysis": "Lees la realidad con precision. Sin lentes rosados, sin filtros de distorsion. Juzgas las situaciones objetivamente y actuas basandote en hechos, no en sentimientos. La esencia del realismo!"
     },
-    "slightly": {
-      "name": "Un poco Delulu",
-      "tagline": "Una pizca saludable de fantasía.",
-      "analysis": "Tienes una mezcla saludable de fantasía y realidad. Sueñas, pero también pones alarmas. Tal vez ensayes una conversación, pero sabes que no va a pasar. ¡El equilibrio perfecto entre esperanza y realismo!"
+    "tinted": {
+      "name": "Vidrio Tintado",
+      "tagline": "Solo un ligero tinte sobre la realidad.",
+      "analysis": "Mayormente realista, pero dejas que tu imaginacion vuele a veces. Un filtro positivo saludable que hace la vida un poco mas divertida. Maestro del equilibrio!"
     },
-    "solulu": {
-      "name": "Delulu es el Solulu",
-      "tagline": "El punto dulce de la ilusión positiva.",
-      "analysis": "¡Descifraste el código! Tus ilusiones positivas alimentan tu confianza. Crees en ti mismo lo justo para hacer que las cosas pasen. La ciencia dice que un poco de sesgo de automejora es saludable — ¡tú eres la prueba viviente!"
+    "rose": {
+      "name": "Filtro Rosa",
+      "tagline": "Clasicos lentes color rosa. El mundo se ve un poco mas bonito.",
+      "analysis": "Mitad realidad, mitad fantasia! Si hay una interpretacion positiva, la tomaras. Este nivel de distorsion puede ser una fuente de confianza. Justo en la frontera donde delulu se convierte en solulu!"
     },
-    "daydreamer": {
-      "name": "Soñador Profesional",
-      "tagline": "Viviendo en una comedia romántica.",
-      "analysis": "Tu imaginación dirige un estudio de producción. Cada crush es una rom-com, cada entrevista es tu historia de origen, y cada espejo es una sesión de fotos. No solo sueñas — diriges, produces y protagonizas la película de tu vida."
+    "prism": {
+      "name": "Vision Prisma",
+      "tagline": "Capacidad de refractar la realidad en arcoiris.",
+      "analysis": "Tus habilidades de interpretacion estan a nivel artistico. Conviertes momentos ordinarios en narrativas dramaticas. Con tanta imaginacion, siempre estas viviendo la version mas entretenida de la realidad!"
     },
-    "movie": {
-      "name": "Viviendo en una Película",
-      "tagline": "Dirigida por tu imaginación.",
-      "analysis": "¿Realidad? Nunca escuché de eso. Existes en un universo donde cada desconocido se enamora de ti, cada fracaso es un giro argumental, y siempre estás a un montaje de distancia del éxito. Tu nivel delulu ha trascendido el entendimiento humano. Icónico."
+    "kaleidoscope": {
+      "name": "Modo Caleidoscopio",
+      "tagline": "Realidad? Suena vagamente familiar...",
+      "analysis": "Tu campo de distorsion de la realidad es legendario. Cada coincidencia es una senal cosmica, cada sonrisa es una confesion, cada fracaso es un giro de trama justo antes del exito. En tu mundo, siempre eres el personaje principal. Iconico!"
     }
   },
   "share": {
     "twitter": "Compartir en X",
-    "copyUrl": "Copiar enlace",
-    "copied": "¡Enlace copiado!",
-    "text": "Mi Delulu Score: {score}% - ¡{tier}! ¿Qué tan delulu eres?"
+    "copyUrl": "Copiar Enlace",
+    "copied": "Enlace copiado!",
+    "text": "Mi Distorsion de Realidad: {score}%! Soy \"{tier}\" 🔮 Cual es tu lente?"
   }
 }

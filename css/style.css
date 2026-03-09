@@ -1,8 +1,8 @@
 /* ========================================
-   Delulu Score - Styles
+   Delulu Score - Reality Distortion Filter
    Primary: #FF6B9D (Hot Pink)
    Dark mode first, Glassmorphism 2.0
-   Dreamy / romantic aesthetic
+   Dreamy / prismatic aesthetic
    ======================================== */
 
 /* --- CSS Variables (Dark mode default) --- */
@@ -14,6 +14,10 @@
   --primary-dim: rgba(255, 107, 157, 0.15);
   --accent: #C084FC;
   --accent-glow: rgba(192, 132, 252, 0.3);
+  --reality-color: #60A5FA;
+  --reality-glow: rgba(96, 165, 250, 0.3);
+  --delulu-color: #F472B6;
+  --delulu-glow: rgba(244, 114, 182, 0.3);
   --bg: #0d0815;
   --bg-card: rgba(255, 255, 255, 0.05);
   --bg-card-hover: rgba(255, 255, 255, 0.08);
@@ -32,6 +36,7 @@
   --radius: 16px;
   --radius-sm: 10px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --distortion: 0;
 }
 
 /* --- Light mode --- */
@@ -212,11 +217,95 @@ body {
   outline: none;
 }
 
+/* --- Distortion Background --- */
+.distortion-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  transition: filter 1s ease, opacity 1s ease;
+}
+
+.distortion-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.orb-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 107, 157, 0.3), transparent);
+  top: -10%;
+  right: -10%;
+}
+
+.orb-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(192, 132, 252, 0.3), transparent);
+  bottom: 10%;
+  left: -10%;
+}
+
+.orb-3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.25), transparent);
+  top: 40%;
+  right: 20%;
+}
+
+/* Distortion levels */
+.distortion-level-1 .distortion-orb { opacity: 0.2; }
+.distortion-level-2 .distortion-orb { opacity: 0.35; }
+.distortion-level-3 .distortion-orb { opacity: 0.5; }
+.distortion-level-4 .distortion-orb { opacity: 0.65; }
+.distortion-level-5 .distortion-orb { opacity: 0.8; }
+
+.distortion-level-2 .orb-1 { transform: scale(1.2); }
+.distortion-level-3 .orb-1 { transform: scale(1.4); }
+.distortion-level-3 .orb-2 { transform: scale(1.2) translateX(20px); }
+.distortion-level-4 .orb-1 { transform: scale(1.6) translateY(10%); }
+.distortion-level-4 .orb-2 { transform: scale(1.4) translateX(30px); }
+.distortion-level-4 .orb-3 { transform: scale(1.3); }
+.distortion-level-5 .orb-1 { transform: scale(1.8) translateY(15%); }
+.distortion-level-5 .orb-2 { transform: scale(1.6) translateX(40px); }
+.distortion-level-5 .orb-3 { transform: scale(1.5) translateX(-20px); }
+
+/* Progressive hue shift on body */
+body.distortion-active {
+  transition: filter 1.5s ease;
+}
+
+.distortion-level-3 body,
+body.distortion-level-3-body {
+  filter: hue-rotate(5deg);
+}
+
+.distortion-level-4 body,
+body.distortion-level-4-body {
+  filter: hue-rotate(10deg) saturate(1.1);
+}
+
+.distortion-level-5 body,
+body.distortion-level-5-body {
+  filter: hue-rotate(15deg) saturate(1.2);
+}
+
 /* --- Container --- */
 .container {
   max-width: 640px;
   margin: 0 auto;
   padding: 24px 16px 80px;
+  position: relative;
+  z-index: 1;
 }
 
 /* --- Screen States --- */
@@ -254,8 +343,8 @@ body {
   overflow: hidden;
 }
 
-/* Floating clouds / bubbles */
-.clouds-container {
+/* Prism beams */
+.prism-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -265,92 +354,38 @@ body {
   overflow: hidden;
 }
 
-.cloud {
+.prism-beam {
   position: absolute;
-  font-size: 40px;
-  opacity: 0.15;
-  animation: floatCloud 12s ease-in-out infinite;
+  width: 2px;
+  height: 120%;
+  opacity: 0.08;
+  animation: prismShift 8s ease-in-out infinite;
 }
 
-.cloud-1 {
-  top: 10%;
-  left: 5%;
-  animation-delay: 0s;
-  font-size: 36px;
-}
-
-.cloud-2 {
-  top: 25%;
-  right: 8%;
-  animation-delay: -4s;
-  font-size: 28px;
-}
-
-.cloud-3 {
-  bottom: 15%;
-  left: 15%;
-  animation-delay: -8s;
-  font-size: 32px;
-}
-
-@keyframes floatCloud {
-  0%, 100% { transform: translateX(0) translateY(0); }
-  25% { transform: translateX(15px) translateY(-10px); }
-  50% { transform: translateX(-10px) translateY(-20px); }
-  75% { transform: translateX(20px) translateY(-5px); }
-}
-
-.bubble {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 107, 157, 0.2), rgba(192, 132, 252, 0.1));
-  border: 1px solid rgba(255, 107, 157, 0.1);
-  animation: floatBubble 8s ease-in-out infinite;
-}
-
-.bubble-1 {
-  width: 20px;
-  height: 20px;
-  top: 20%;
-  right: 15%;
-  animation-delay: 0s;
-}
-
-.bubble-2 {
-  width: 14px;
-  height: 14px;
-  top: 60%;
-  left: 10%;
-  animation-delay: -2s;
-}
-
-.bubble-3 {
-  width: 24px;
-  height: 24px;
-  bottom: 20%;
-  right: 20%;
-  animation-delay: -4s;
-}
-
-.bubble-4 {
-  width: 10px;
-  height: 10px;
-  top: 40%;
+.beam-1 {
   left: 20%;
-  animation-delay: -6s;
+  background: linear-gradient(180deg, transparent, var(--primary), transparent);
+  animation-delay: 0s;
+  transform: rotate(15deg);
 }
 
-.bubble-5 {
-  width: 16px;
-  height: 16px;
-  top: 15%;
-  left: 40%;
+.beam-2 {
+  left: 50%;
+  background: linear-gradient(180deg, transparent, var(--accent), transparent);
   animation-delay: -3s;
+  transform: rotate(-10deg);
 }
 
-@keyframes floatBubble {
-  0%, 100% { transform: translateY(0) scale(1); opacity: 0.4; }
-  50% { transform: translateY(-30px) scale(1.1); opacity: 0.7; }
+.beam-3 {
+  left: 80%;
+  background: linear-gradient(180deg, transparent, var(--delulu-color), transparent);
+  animation-delay: -6s;
+  transform: rotate(8deg);
+}
+
+@keyframes prismShift {
+  0%, 100% { opacity: 0.05; transform: rotate(15deg) translateX(0); }
+  50% { opacity: 0.15; transform: rotate(15deg) translateX(20px); }
 }
 
 .app-emoji {
@@ -358,12 +393,12 @@ body {
   margin-bottom: 16px;
   position: relative;
   z-index: 1;
-  animation: dreamFloat 3s ease-in-out infinite;
+  animation: prismFloat 3s ease-in-out infinite;
 }
 
-@keyframes dreamFloat {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-12px) scale(1.05); }
+@keyframes prismFloat {
+  0%, 100% { transform: translateY(0) scale(1); filter: hue-rotate(0deg); }
+  50% { transform: translateY(-12px) scale(1.05); filter: hue-rotate(20deg); }
 }
 
 .start-card h1 {
@@ -462,8 +497,8 @@ body {
   background: rgba(29, 155, 240, 0.25);
 }
 
-/* --- Quiz Screen --- */
-.quiz-card {
+/* --- Filter Screen --- */
+.filter-card {
   position: relative;
 }
 
@@ -478,7 +513,7 @@ body {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: linear-gradient(90deg, var(--reality-color), var(--primary), var(--accent));
   border-radius: 3px;
   transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   width: 0%;
@@ -488,73 +523,212 @@ body {
   text-align: center;
   color: var(--text-muted);
   font-size: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-weight: 500;
 }
 
-.question-text {
-  font-size: 18px;
+/* --- Distortion Gauge --- */
+.gauge-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+.gauge-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  min-width: 50px;
+}
+
+.gauge-label-left {
+  color: var(--reality-color);
+  text-align: right;
+}
+
+.gauge-label-right {
+  color: var(--delulu-color);
+  text-align: left;
+}
+
+.gauge-track {
+  flex: 1;
+  height: 8px;
+  background: var(--meter-bg);
+  border-radius: 4px;
+  position: relative;
+  overflow: visible;
+}
+
+.gauge-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--reality-color), var(--primary), var(--delulu-color));
+  width: 0%;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gauge-indicator {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background: var(--primary);
+  border: 3px solid var(--text);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--primary-glow);
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1), background 0.8s ease;
+  z-index: 2;
+}
+
+/* --- Situation Text --- */
+.situation-text {
+  font-size: 17px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 24px;
   line-height: 1.5;
-  min-height: 54px;
+  min-height: 52px;
+  color: var(--text);
 }
 
-.options-container {
+/* --- Dual Cards --- */
+.dual-cards {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: relative;
 }
 
-.option-btn {
+.interpretation-card {
   width: 100%;
-  min-height: 52px;
-  padding: 14px 20px;
+  padding: 20px;
   background: var(--bg-option);
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-size: 15px;
-  line-height: 1.4;
-  text-align: left;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
   cursor: pointer;
+  text-align: left;
   transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+  color: var(--text);
+  font-family: inherit;
 }
 
-.option-btn:hover {
-  background: var(--bg-option-hover);
-  border-color: var(--border-active);
-  transform: translateX(4px);
-  box-shadow: 0 0 16px var(--primary-glow);
+.interpretation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity var(--transition);
+  border-radius: inherit;
 }
 
-.option-btn:active {
-  transform: translateX(2px);
+.card-reality::before {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), transparent);
 }
 
-.option-btn.selected {
-  background: var(--primary-dim);
-  border-color: var(--primary);
-  box-shadow: 0 0 16px var(--primary-glow);
+.card-delulu::before {
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), transparent);
 }
 
-/* Question slide animation */
-.quiz-card.slide-out {
-  animation: slideOut 0.3s ease forwards;
+.interpretation-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px var(--shadow);
 }
 
-.quiz-card.slide-in {
-  animation: slideIn 0.3s ease forwards;
+.interpretation-card:hover::before {
+  opacity: 1;
 }
 
-@keyframes slideOut {
-  to { opacity: 0; transform: translateX(-30px); }
+.card-reality:hover {
+  border-color: var(--reality-color);
+  box-shadow: 0 4px 20px var(--reality-glow);
 }
 
-@keyframes slideIn {
-  from { opacity: 0; transform: translateX(30px); }
-  to { opacity: 1; transform: translateX(0); }
+.card-delulu:hover {
+  border-color: var(--delulu-color);
+  box-shadow: 0 4px 20px var(--delulu-glow);
+}
+
+.interpretation-card.selected-reality {
+  border-color: var(--reality-color);
+  background: rgba(96, 165, 250, 0.12);
+  box-shadow: 0 0 20px var(--reality-glow);
+}
+
+.interpretation-card.selected-delulu {
+  border-color: var(--delulu-color);
+  background: rgba(244, 114, 182, 0.12);
+  box-shadow: 0 0 20px var(--delulu-glow);
+}
+
+.interpretation-card.not-selected {
+  opacity: 0.4;
+  transform: scale(0.97);
+}
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background: rgba(96, 165, 250, 0.15);
+  color: var(--reality-color);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+.badge-delulu {
+  background: rgba(244, 114, 182, 0.15);
+  color: var(--delulu-color);
+  border-color: rgba(244, 114, 182, 0.3);
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.card-divider {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2px 0;
+}
+
+/* Card transition animation */
+.filter-card.card-exit {
+  animation: cardExit 0.35s ease forwards;
+}
+
+.filter-card.card-enter {
+  animation: cardEnter 0.35s ease forwards;
+}
+
+@keyframes cardExit {
+  to { opacity: 0; transform: scale(0.95) translateY(-10px); }
+}
+
+@keyframes cardEnter {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 /* --- Result Screen --- */
@@ -661,32 +835,32 @@ body {
 }
 
 /* Tier-specific colors */
-.result-tier.tier-grounded {
+.result-tier.tier-crystal {
   background: linear-gradient(135deg, #60A5FA, #93C5FD);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.result-tier.tier-slightly {
+.result-tier.tier-tinted {
   background: linear-gradient(135deg, #FBBF24, #FCD34D);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.result-tier.tier-solulu {
+.result-tier.tier-rose {
   background: linear-gradient(135deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.result-tier.tier-daydreamer {
+.result-tier.tier-prism {
   background: linear-gradient(135deg, #F472B6, #C084FC);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.result-tier.tier-movie {
-  background: linear-gradient(135deg, #FB923C, #F43F5E);
+.result-tier.tier-kaleidoscope {
+  background: linear-gradient(135deg, #FB923C, #F43F5E, #C084FC);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -830,13 +1004,16 @@ body {
     font-size: 20px;
   }
 
-  .question-text {
-    font-size: 16px;
+  .situation-text {
+    font-size: 15px;
   }
 
-  .option-btn {
+  .interpretation-card {
+    padding: 16px;
+  }
+
+  .card-text {
     font-size: 14px;
-    padding: 12px 16px;
   }
 
   .result-actions {
@@ -847,8 +1024,9 @@ body {
     width: 100%;
   }
 
-  .cloud {
-    font-size: 28px;
+  .gauge-label {
+    font-size: 10px;
+    min-width: 40px;
   }
 }
 
@@ -870,9 +1048,12 @@ body {
     animation: none;
   }
 
-  .cloud,
-  .bubble {
+  .prism-beam {
     animation: none;
+  }
+
+  .distortion-orb {
+    transition-duration: 0.01ms !important;
   }
 
   .meter-arc {
@@ -880,6 +1061,11 @@ body {
   }
 
   .progress-fill {
+    transition-duration: 0.01ms !important;
+  }
+
+  .gauge-fill,
+  .gauge-indicator {
     transition-duration: 0.01ms !important;
   }
 }
