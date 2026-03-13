@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "Bozulma Seviyen",
     "analysis": "Analiz",
-    "retake": "Tekrar Dene"
+    "retake": "Tekrar Dene",
+    "moreTests": "Daha Fazla Test Kesfet",
+    "percentileStat": "Katilimcilarin sadece <strong>{percent}%</strong>'i bu bozulma seviyesine sahip"
+  },
+  "related": {
+    "brainrotScore": "Brainrot Skoru",
+    "rizzScore": "Rizz Skoru",
+    "npcTest": "NPC Testi",
+    "pickMe": "Pick Me Testi"
   },
   "results": {
     "crystal": {

@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "Ваш Уровень Искажения",
     "analysis": "Анализ",
-    "retake": "Пройти снова"
+    "retake": "Пройти снова",
+    "moreTests": "Другие тесты",
+    "percentileStat": "Только <strong>{percent}%</strong> участников имеют этот уровень искажения"
+  },
+  "related": {
+    "brainrotScore": "Brainrot Счёт",
+    "rizzScore": "Rizz Счёт",
+    "npcTest": "NPC Тест",
+    "pickMe": "Pick Me Тест"
   },
   "results": {
     "crystal": {

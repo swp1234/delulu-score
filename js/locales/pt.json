@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "Seu Nivel de Distorcao",
     "analysis": "Analise",
-    "retake": "Tentar Novamente"
+    "retake": "Tentar Novamente",
+    "moreTests": "Explore Mais Testes",
+    "percentileStat": "Apenas <strong>{percent}%</strong> dos participantes tem este nivel de distorcao"
+  },
+  "related": {
+    "brainrotScore": "Brainrot Score",
+    "rizzScore": "Rizz Score",
+    "npcTest": "Teste NPC",
+    "pickMe": "Teste Pick Me"
   },
   "results": {
     "crystal": {

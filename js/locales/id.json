@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "Level Distorsimu",
     "analysis": "Analisis",
-    "retake": "Coba Lagi"
+    "retake": "Coba Lagi",
+    "moreTests": "Jelajahi Tes Lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang memiliki level distorsi ini"
+  },
+  "related": {
+    "brainrotScore": "Skor Brainrot",
+    "rizzScore": "Skor Rizz",
+    "npcTest": "Tes NPC",
+    "pickMe": "Tes Pick Me"
   },
   "results": {
     "crystal": {

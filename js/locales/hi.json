@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "आपका विकृति स्तर",
     "analysis": "विश्लेषण",
-    "retake": "फिर से करें"
+    "retake": "फिर से करें",
+    "moreTests": "और टेस्ट देखें",
+    "percentileStat": "केवल <strong>{percent}%</strong> प्रतिभागियों का यह विकृति स्तर है"
+  },
+  "related": {
+    "brainrotScore": "ब्रेनरॉट स्कोर",
+    "rizzScore": "रिज़ स्कोर",
+    "npcTest": "NPC टेस्ट",
+    "pickMe": "पिक मी टेस्ट"
   },
   "results": {
     "crystal": {

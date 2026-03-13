@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "あなたの歪曲レベル",
     "analysis": "分析",
-    "retake": "もう一度テスト"
+    "retake": "もう一度テスト",
+    "moreTests": "他のテストも試す",
+    "percentileStat": "参加者の<strong>{percent}%</strong>だけがこの歪曲レベルです"
+  },
+  "related": {
+    "brainrotScore": "ブレインロット度",
+    "rizzScore": "リズスコア",
+    "npcTest": "NPCテスト",
+    "pickMe": "ピックミーテスト"
   },
   "results": {
     "crystal": {

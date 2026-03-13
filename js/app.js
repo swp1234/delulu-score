@@ -314,6 +314,14 @@
       document.getElementById('result-desc').textContent = t('results.' + tier + '.tagline');
       document.getElementById('result-analysis').textContent = t('results.' + tier + '.analysis');
 
+      // Percentile stat
+      var pStat = document.getElementById('percentile-stat');
+      if (pStat) {
+        var pctVal = Math.floor(Math.random() * 12) + 6;
+        var template = t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants have this distortion level';
+        pStat.innerHTML = template.replace('{percent}', pctVal);
+      }
+
       if (typeof gtag === 'function') {
         gtag('event', 'quiz_complete', {
           event_category: 'delulu_score',

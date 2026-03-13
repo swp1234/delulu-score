@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "Ton Niveau de Distorsion",
     "analysis": "Analyse",
-    "retake": "Reessayer"
+    "retake": "Reessayer",
+    "moreTests": "Decouvre d'autres tests",
+    "percentileStat": "Seulement <strong>{percent}%</strong> des participants ont ce niveau de distorsion"
+  },
+  "related": {
+    "brainrotScore": "Score Brainrot",
+    "rizzScore": "Score Rizz",
+    "npcTest": "Test NPC",
+    "pickMe": "Test Pick Me"
   },
   "results": {
     "crystal": {

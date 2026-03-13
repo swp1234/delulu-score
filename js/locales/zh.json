@@ -75,7 +75,15 @@
   "result": {
     "yourScore": "你的扭曲等级",
     "analysis": "分析",
-    "retake": "再测一次"
+    "retake": "再测一次",
+    "moreTests": "探索更多测试",
+    "percentileStat": "仅有<strong>{percent}%</strong>的参与者拥有这个扭曲等级"
+  },
+  "related": {
+    "brainrotScore": "脑腐分数",
+    "rizzScore": "魅力分数",
+    "npcTest": "NPC测试",
+    "pickMe": "Pick Me测试"
   },
   "results": {
     "crystal": {
