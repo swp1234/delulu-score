@@ -3,7 +3,9 @@
     "title": "Seberapa Delulu Kamu?",
     "description": "12 pertanyaan untuk mengukur kepercayaan diri delusionalmu dalam romansa, karier, dan citra diri. Berapa skor Delulumu?"
   },
-  "a11y": { "skip": "Lewati ke konten" },
+  "a11y": {
+    "skip": "Lewati ke konten"
+  },
   "app": {
     "title": "Seberapa Delulu Kamu?",
     "subtitle": "Ukur kepercayaan diri delusionalmu dalam romansa, karier, dan citra diri",
@@ -14,57 +16,122 @@
   "questions": {
     "q1": {
       "text": "Apakah kamu berlatih percakapan yang tidak akan pernah terjadi?",
-      "options": { "a": "Tidak pernah", "b": "Kadang, saat mandi", "c": "Beberapa skenario dengan dialog", "d": "Aku punya naskah lengkap" }
+      "options": {
+        "a": "Tidak pernah",
+        "b": "Kadang, saat mandi",
+        "c": "Beberapa skenario dengan dialog",
+        "d": "Aku punya naskah lengkap"
+      }
     },
     "q2": {
       "text": "Pernah merencanakan masa depan dengan seseorang yang belum pernah kamu ajak bicara?",
-      "options": { "a": "Itu mengkhawatirkan", "b": "Mungkin membayangkan satu kencan", "c": "Sudah beri nama anak-anak", "d": "Sudah pilih tempat pernikahan" }
+      "options": {
+        "a": "Itu mengkhawatirkan",
+        "b": "Mungkin membayangkan satu kencan",
+        "c": "Sudah beri nama anak-anak",
+        "d": "Sudah pilih tempat pernikahan"
+      }
     },
     "q3": {
       "text": "Ketika seseorang baik padamu, pikiran pertamamu?",
-      "options": { "a": "Mereka cuma sopan", "b": "Mungkin mereka suka aku?", "c": "Mereka pasti suka aku", "d": "Kita udah kayak pacaran" }
+      "options": {
+        "a": "Mereka cuma sopan",
+        "b": "Mungkin mereka suka aku?",
+        "c": "Mereka pasti suka aku",
+        "d": "Kita udah kayak pacaran"
+      }
     },
     "q4": {
       "text": "Kamu percaya bisa jadi terkenal?",
-      "options": { "a": "Tidak juga", "b": "Mungkin di bidang niche", "c": "Tentu saja, cuma belum mulai", "d": "Aku sudah terkenal, orang-orang belum tahu aja" }
+      "options": {
+        "a": "Tidak juga",
+        "b": "Mungkin di bidang niche",
+        "c": "Tentu saja, cuma belum mulai",
+        "d": "Aku sudah terkenal, orang-orang belum tahu aja"
+      }
     },
     "q5": {
       "text": "Seberapa sering kamu membayangkan pidato penerimaanmu?",
-      "options": { "a": "Untuk apa?", "b": "Satu-dua kali, iseng", "c": "Sudah hafal", "d": "Sudah berterima kasih ke orang tertentu" }
+      "options": {
+        "a": "Untuk apa?",
+        "b": "Satu-dua kali, iseng",
+        "c": "Sudah hafal",
+        "d": "Sudah berterima kasih ke orang tertentu"
+      }
     },
     "q6": {
       "text": "Seseorang membaca pesanmu tapi tidak membalas. Apa yang terjadi?",
-      "options": { "a": "Mereka sibuk", "b": "Mungkin memikirkan balasan sempurna", "c": "Terintimidasi oleh energiku", "d": "HP mereka rusak karena kekuatan pesanku" }
+      "options": {
+        "a": "Mereka sibuk",
+        "b": "Mungkin memikirkan balasan sempurna",
+        "c": "Terintimidasi oleh energiku",
+        "d": "HP mereka rusak karena kekuatan pesanku"
+      }
     },
     "q7": {
       "text": "Bagaimana kamu melihat dirimu 5 tahun lagi?",
-      "options": { "a": "Realistis bekerja", "b": "Sukses di bidangku", "c": "Menjalani hidup impian", "d": "Di sampul majalah" }
+      "options": {
+        "a": "Realistis bekerja",
+        "b": "Sukses di bidangku",
+        "c": "Menjalani hidup impian",
+        "d": "Di sampul majalah"
+      }
     },
     "q8": {
       "text": "Orang asing tersenyum padamu. Artinya?",
-      "options": { "a": "Tidak ada, mereka senyum ke semua orang", "b": "Mereka ramah saja", "c": "Mereka merasakan auraku", "d": "Cinta pada pandangan pertama" }
+      "options": {
+        "a": "Tidak ada, mereka senyum ke semua orang",
+        "b": "Mereka ramah saja",
+        "c": "Mereka merasakan auraku",
+        "d": "Cinta pada pandangan pertama"
+      }
     },
     "q9": {
       "text": "Kamu percaya manifestasi?",
-      "options": { "a": "Itu tidak nyata", "b": "Berpikir positif membantu", "c": "Aku manifestasi setiap hari", "d": "Kuis ini muncul juga karena aku manifestasikan" }
+      "options": {
+        "a": "Itu tidak nyata",
+        "b": "Berpikir positif membantu",
+        "c": "Aku manifestasi setiap hari",
+        "d": "Kuis ini muncul juga karena aku manifestasikan"
+      }
     },
     "q10": {
       "text": "Bagaimana kamu menangani penolakan?",
-      "options": { "a": "Terima dan lanjut", "b": "Sedikit sedih tapi ok", "c": "Rugi mereka, bukan aku", "d": "Mereka akan kembali, selalu begitu" }
+      "options": {
+        "a": "Terima dan lanjut",
+        "b": "Sedikit sedih tapi ok",
+        "c": "Rugi mereka, bukan aku",
+        "d": "Mereka akan kembali, selalu begitu"
+      }
     },
     "q11": {
       "text": "Kamu melihat story Instagram gebetanmu. Kamu berpikir:",
-      "options": { "a": "Konten menarik", "b": "Lagi ngapain ya", "c": "Mereka posting itu buat aku", "d": "Ini pada dasarnya surat cinta" }
+      "options": {
+        "a": "Konten menarik",
+        "b": "Lagi ngapain ya",
+        "c": "Mereka posting itu buat aku",
+        "d": "Ini pada dasarnya surat cinta"
+      }
     },
     "q12": {
       "text": "Saat bercermin, kamu melihat:",
-      "options": { "a": "Orang biasa", "b": "Seseorang yang punya potensi", "c": "Paket lengkap yang sudah diakui", "d": "Karakter utama alam semesta" }
+      "options": {
+        "a": "Orang biasa",
+        "b": "Seseorang yang punya potensi",
+        "c": "Paket lengkap yang sudah diakui",
+        "d": "Karakter utama alam semesta"
+      }
     }
   },
   "result": {
     "yourScore": "Skor Delulumu",
     "analysis": "Analisis",
-    "retake": "Tes Lagi"
+    "retake": "Tes Lagi",
+    "nextStepLabel": "Tes berikutnya",
+    "nextStepDesc": "Buka follow-up yang paling cocok untuk hasil kamu sekarang dan lanjutkan momentumnya.",
+    "nextStepCta": "Buka tes lanjutan",
+    "jumpToMore": "Lihat rekomendasi lain",
+    "moreTests": "Tes lain untuk dicoba"
   },
   "results": {
     "grounded": {
@@ -98,5 +165,11 @@
     "copyUrl": "Salin Link",
     "copied": "Link disalin!",
     "text": "Skor Deluluku: {score}% - {tier}! Seberapa delulu kamu?"
+  },
+  "related": {
+    "attachmentStyle": "Attachment Style",
+    "eqTest": "EQ Test",
+    "rizzScore": "Rizz Score",
+    "mbtiLove": "MBTI Love"
   }
 }

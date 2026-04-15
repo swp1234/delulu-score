@@ -126,7 +126,12 @@
   "result": {
     "yourScore": "Tu Delulu Score",
     "analysis": "Análisis",
-    "retake": "Repetir Test"
+    "retake": "Repetir Test",
+    "nextStepLabel": "Siguiente test recomendado",
+    "nextStepDesc": "Abre el mejor seguimiento para tu resultado actual y manten el impulso.",
+    "nextStepCta": "Abrir siguiente test",
+    "jumpToMore": "Ver mas opciones",
+    "moreTests": "Mas tests para probar"
   },
   "results": {
     "grounded": {
@@ -160,5 +165,11 @@
     "copyUrl": "Copiar enlace",
     "copied": "¡Enlace copiado!",
     "text": "Mi Delulu Score: {score}% - ¡{tier}! ¿Qué tan delulu eres?"
+  },
+  "related": {
+    "attachmentStyle": "Estilo de apego",
+    "eqTest": "Test EQ",
+    "rizzScore": "Rizz Score",
+    "mbtiLove": "MBTI Amor"
   }
 }

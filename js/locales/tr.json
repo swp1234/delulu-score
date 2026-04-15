@@ -3,7 +3,9 @@
     "title": "Ne Kadar Delulu'sun?",
     "description": "12 soruyla aşk, kariyer ve benlik imajındaki hayalperest özgüvenini ölç. Delulu Skorun kaç?"
   },
-  "a11y": { "skip": "İçeriğe atla" },
+  "a11y": {
+    "skip": "İçeriğe atla"
+  },
   "app": {
     "title": "Ne Kadar Delulu'sun?",
     "subtitle": "Aşk, kariyer ve benlik imajındaki hayalperest özgüvenini ölç",
@@ -14,57 +16,122 @@
   "questions": {
     "q1": {
       "text": "Hiç yaşanmayacak konuşmaları kafanızda prova eder misiniz?",
-      "options": { "a": "Asla", "b": "Ara sıra, duşta", "c": "Diyaloglu birden fazla senaryo", "d": "Tam bir senaryom var" }
+      "options": {
+        "a": "Asla",
+        "b": "Ara sıra, duşta",
+        "c": "Diyaloglu birden fazla senaryo",
+        "d": "Tam bir senaryom var"
+      }
     },
     "q2": {
       "text": "Hiç konuşmadığınız biriyle geleceğinizi planladınız mı?",
-      "options": { "a": "Bu endişe verici", "b": "Belki bir buluşma hayal ettim", "c": "Çocuklara isim koydum", "d": "Düğün mekanını seçtim" }
+      "options": {
+        "a": "Bu endişe verici",
+        "b": "Belki bir buluşma hayal ettim",
+        "c": "Çocuklara isim koydum",
+        "d": "Düğün mekanını seçtim"
+      }
     },
     "q3": {
       "text": "Biri size iyi davrandığında ilk düşünceniz?",
-      "options": { "a": "Sadece kibar davranıyorlar", "b": "Acaba benden hoşlanıyorlar mı?", "c": "Kesinlikle benden hoşlanıyorlar", "d": "Artık neredeyse çıkıyoruz" }
+      "options": {
+        "a": "Sadece kibar davranıyorlar",
+        "b": "Acaba benden hoşlanıyorlar mı?",
+        "c": "Kesinlikle benden hoşlanıyorlar",
+        "d": "Artık neredeyse çıkıyoruz"
+      }
     },
     "q4": {
       "text": "Gerçekten denesen ünlü olabileceğine inanıyor musun?",
-      "options": { "a": "Pek değil", "b": "Belki niş bir alanda", "c": "Kesinlikle, henüz başlamadım", "d": "Zaten ünlüyüm, insanlar bilmiyor" }
+      "options": {
+        "a": "Pek değil",
+        "b": "Belki niş bir alanda",
+        "c": "Kesinlikle, henüz başlamadım",
+        "d": "Zaten ünlüyüm, insanlar bilmiyor"
+      }
     },
     "q5": {
       "text": "Ödül konuşmanızı ne sıklıkla hayal ediyorsunuz?",
-      "options": { "a": "Ne ödülü?", "b": "Bir iki kez, eğlence olsun", "c": "Ezberledim", "d": "İsim vererek belirli kişilere teşekkür ettim" }
+      "options": {
+        "a": "Ne ödülü?",
+        "b": "Bir iki kez, eğlence olsun",
+        "c": "Ezberledim",
+        "d": "İsim vererek belirli kişilere teşekkür ettim"
+      }
     },
     "q6": {
       "text": "Biri mesajınızı görüp cevap vermedi. Ne oldu?",
-      "options": { "a": "Meşguller", "b": "Mükemmel cevabı düşünüyor olabilirler", "c": "Enerjimden korkmuşlar", "d": "Mesajımın gücünden telefonları bozulmuş" }
+      "options": {
+        "a": "Meşguller",
+        "b": "Mükemmel cevabı düşünüyor olabilirler",
+        "c": "Enerjimden korkmuşlar",
+        "d": "Mesajımın gücünden telefonları bozulmuş"
+      }
     },
     "q7": {
       "text": "5 yıl sonra kendinizi nasıl görüyorsunuz?",
-      "options": { "a": "Gerçekçi bir şekilde çalışıyor", "b": "Alanımda başarılı", "c": "Hayallerimi yaşıyor", "d": "Bir derginin kapağında" }
+      "options": {
+        "a": "Gerçekçi bir şekilde çalışıyor",
+        "b": "Alanımda başarılı",
+        "c": "Hayallerimi yaşıyor",
+        "d": "Bir derginin kapağında"
+      }
     },
     "q8": {
       "text": "Bir yabancı size gülümsedi. Ne anlama geliyor?",
-      "options": { "a": "Hiçbir şey, herkese gülümsüyorlar", "b": "Cana yakın davranıyorlar", "c": "Auramı hissettiler", "d": "İlk görüşte aşk" }
+      "options": {
+        "a": "Hiçbir şey, herkese gülümsüyorlar",
+        "b": "Cana yakın davranıyorlar",
+        "c": "Auramı hissettiler",
+        "d": "İlk görüşte aşk"
+      }
     },
     "q9": {
       "text": "Manifestasyona inanıyor musunuz?",
-      "options": { "a": "Gerçek değil", "b": "Pozitif düşünce yardımcı olur", "c": "Her gün manifeste ediyorum", "d": "Bu testin çıkmasını da ben manifeste ettim" }
+      "options": {
+        "a": "Gerçek değil",
+        "b": "Pozitif düşünce yardımcı olur",
+        "c": "Her gün manifeste ediyorum",
+        "d": "Bu testin çıkmasını da ben manifeste ettim"
+      }
     },
     "q10": {
       "text": "Reddedilmeyle nasıl başa çıkarsınız?",
-      "options": { "a": "Kabul edip devam ederim", "b": "Biraz üzgün ama sorun yok", "c": "Onların kaybı, benim değil", "d": "Geri gelecekler, her zaman gelirler" }
+      "options": {
+        "a": "Kabul edip devam ederim",
+        "b": "Biraz üzgün ama sorun yok",
+        "c": "Onların kaybı, benim değil",
+        "d": "Geri gelecekler, her zaman gelirler"
+      }
     },
     "q11": {
       "text": "Hoşlandığınız kişinin Instagram hikayesini gördünüz. Düşünceniz:",
-      "options": { "a": "İlginç içerik", "b": "Acaba ne yapıyor", "c": "Benim için paylaştı", "d": "Bu aslında bir aşk mektubu" }
+      "options": {
+        "a": "İlginç içerik",
+        "b": "Acaba ne yapıyor",
+        "c": "Benim için paylaştı",
+        "d": "Bu aslında bir aşk mektubu"
+      }
     },
     "q12": {
       "text": "Aynaya baktığınızda ne görürsünüz?",
-      "options": { "a": "Normal bir insan", "b": "Potansiyeli olan biri", "c": "Sertifikalı çekici biri", "d": "Evrenin ana karakteri" }
+      "options": {
+        "a": "Normal bir insan",
+        "b": "Potansiyeli olan biri",
+        "c": "Sertifikalı çekici biri",
+        "d": "Evrenin ana karakteri"
+      }
     }
   },
   "result": {
     "yourScore": "Delulu Skorunuz",
     "analysis": "Analiz",
-    "retake": "Tekrar Test"
+    "retake": "Tekrar Test",
+    "nextStepLabel": "Sonraki test onerisi",
+    "nextStepDesc": "Su anki sonucun icin en guclu devam testini ac ve akisi surdur.",
+    "nextStepCta": "Devam testini ac",
+    "jumpToMore": "Daha fazla oneriyi gor",
+    "moreTests": "Siradaki testler"
   },
   "results": {
     "grounded": {
@@ -98,5 +165,11 @@
     "copyUrl": "Bağlantıyı Kopyala",
     "copied": "Kopyalandı!",
     "text": "Delulu Skorum: {score}% - {tier}! Sen ne kadar Delulu'sun?"
+  },
+  "related": {
+    "attachmentStyle": "Baglanma Stili",
+    "eqTest": "EQ Testi",
+    "rizzScore": "Rizz Skoru",
+    "mbtiLove": "MBTI Ask Uyumu"
   }
 }
